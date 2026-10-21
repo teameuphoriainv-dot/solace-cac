@@ -1,0 +1,18 @@
+# The trained bedside triage model goes in this folder. It is not in git (about 250 MB).
+#
+#   artifacts.pkl     feature setup: TF-IDF vocabularies, label encoders, medians, metrics
+#   conformal.pkl     likely-range calibrator (per-ESI conformal q-hat values)
+#   lgbm_fold0.txt    LightGBM fold 1 of 5
+#   lgbm_fold1.txt    LightGBM fold 2 of 5
+#   lgbm_fold2.txt    LightGBM fold 3 of 5
+#   lgbm_fold3.txt    LightGBM fold 4 of 5
+#   lgbm_fold4.txt    LightGBM fold 5 of 5
+#
+# Get them with:   scripts/fetch_models.sh
+# It downloads solace-models-v1.tar.gz from the GitHub release and checks each file
+# against a pinned sha256 before installing it (the .pkl files are pickles).
+# Check an existing copy with:   scripts/fetch_models.sh --verify
+#
+# The folds and artifacts.pkl were trained by scripts/train_triage_model.py on the Kaggle
+# Triagegeist data; conformal.pkl is written by scripts/calibrate_conformal.py.
+# Without these files the app still runs and triage uses the deterministic rules only.

@@ -1,0 +1,6268 @@
+{
+ "name": "Diagnostic set: blind test 1",
+ "description": "240 check-ins (160 emergencies, 80 everyday; 150 English and 18 each in Spanish, Chinese, Hindi, Arabic and Vietnamese) written and frozen by a separate Claude Code agent before it looked at the rules or the tests, then run once blind on 2026-10-19. The rules were then fixed by category using its misses, so it is NO LONGER BLIND: it is a diagnostic set, and blind test 2 is the honest number. Expected levels and checklist answers are that agent's reading of the ESI handbook. Its checklist answers were written before the 'ingestion' item existed. Nothing here was checked by clinicians or native speakers.",
+ "source_sha256": "2669a4dd236f5a1608b1933e2ec52ecf19e1225e3ca6669e09bbc49d5a08193d",
+ "fields": {
+  "max_esi": "emergencies: shown at this level or more urgent",
+  "min_esi": "everyday: shown at ESI 3 or calmer (never 1 or 2)",
+  "expected_esi": "the level the blind evaluator expected",
+  "truthful_flags": "checklist ids a patient in that situation would honestly tap"
+ },
+ "cases": [
+  {
+   "id": "en_e001",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I was mowing the lawn and got this heavy squeezing feeling behind my breastbone, now my jaw aches and Im sweating buckets",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac-exertional",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e002",
+   "kind": "emergency",
+   "language": "en",
+   "text": "theres a weird pressure in the middle of my chest that wont go away and my left arm feels heavy and kinda numb",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e003",
+   "kind": "emergency",
+   "language": "en",
+   "text": "My husband is 58. He says it feels like heartburn but way worse than his normal heartburn, he's gone gray and clammy and keeps rubbing his chest",
+   "medical_info": {
+    "age": 58,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e004",
+   "kind": "emergency",
+   "language": "en",
+   "text": "heart is pounding like 180 out of nowhere and the room keeps going dim like im about to pass out",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "svt-presyncope",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e005",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I had a stent put in last year and that same tight band feeling is back, took a nitro 15 min ago and it didnt help",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac-history",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e006",
+   "kind": "emergency",
+   "language": "en",
+   "text": "So my grandma is 77 and diabetic, she came over for Sunday lunch and said her stomach felt off, she thought it was the potato salad. Then she got really tired and had to sit down, and now she's sweating a lot and says she can't get a good breath even sitting still. She just doesn't seem right to me.",
+   "medical_info": {
+    "age": 77,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "atypical-mi-long",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e007",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Sharp ripping pain started in my chest and shot straight through to my back between my shoulder blades, worst pain I have ever felt",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "dissection",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e008",
+   "kind": "emergency",
+   "language": "en",
+   "text": "the defibrillator thing they put in me just went off and shocked me twice in ten minutes",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "icd-shocks",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e009",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my dad just collapsed in the waiting room chair and i dont think hes breathing, please someone come",
+   "medical_info": {
+    "age": 70,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "faint",
+    "breathing"
+   ],
+   "tag": "arrest-waiting-room",
+   "max_esi": 1
+  },
+  {
+   "id": "en_e010",
+   "kind": "emergency",
+   "language": "en",
+   "text": "chest hurts when i take a deep breath, i just got off a 14 hour flight yesterday and my left calf is swollen and sore",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "pe",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e011",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my wifes words came out all jumbled at breakfast and the right side of her mouth is sagging, started maybe 40 mins ago",
+   "medical_info": {
+    "age": 60,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e012",
+   "kind": "emergency",
+   "language": "en",
+   "text": "cnt lift my left arm and my leg feels like its asleep, happend all of a sudden while i was watching tv",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-typos",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e013",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my vision went black in one eye like a curtain coming down, it came back but now my right hand is tingly and clumsy",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "tia",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e014",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Mom is 79 and keeps dropping her coffee cup with her right hand and she's slurring like she's drunk, she doesnt drink",
+   "medical_info": {
+    "age": 79,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-elderly",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e015",
+   "kind": "emergency",
+   "language": "en",
+   "text": "the room is spinning, I cant walk straight, and Im seeing two of everything, it all came on at once about an hour ago",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "posterior-stroke",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e016",
+   "kind": "emergency",
+   "language": "en",
+   "text": "i woke up and half my face wont move and my speech sounds off",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "facial-droop",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e017",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Uncle Ray suddenly cant find his words, he knows what he wants to say but it comes out as gibberish",
+   "medical_info": {
+    "age": 65,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "aphasia-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e018",
+   "kind": "emergency",
+   "language": "en",
+   "text": "worst headache of my life hit me like a thunderclap while I was lifting weights, then I threw up",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "sah",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e019",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I can only say a few words at a time before I need another breath, my inhaler isnt doing anything",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "asthma",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e020",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 6 year old is wheezing so hard you can see the skin sucking in between his ribs",
+   "medical_info": {
+    "age": 6,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "peds-resp",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e021",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Ive got COPD and Im way more winded than usual today, my lips look kinda blue",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "copd",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e022",
+   "kind": "emergency",
+   "language": "en",
+   "text": "cant get air in, feels like breathin thru a straw, gettin worse",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "typos-resp",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e023",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I've had heart failure for a few years and I've been doing ok. This week my ankles got really puffy and tonight I literally can't lie flat without gasping, I had to sleep sitting up in the recliner and now I'm coughing up pink foamy spit.",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "pulm-edema-long",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e024",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my pulse ox says 84 and i get totally winded just walking to the bathroom",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "hypoxia",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e025",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my toddler put a coin in his mouth and now hes drooling, cant swallow, and makes a high squeaky noise every time he breathes in",
+   "medical_info": {
+    "age": 2,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "stridor-toddler",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e026",
+   "kind": "emergency",
+   "language": "en",
+   "text": "stabbing pain on one side of my chest and all of a sudden Im short of breath. I'm tall and skinny and my lung collapsed once before",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing",
+    "chest"
+   ],
+   "tag": "ptx",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e027",
+   "kind": "emergency",
+   "language": "en",
+   "text": "been hittin my albuterol every 20 min since 3am and im still tight af",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "asthma-slang",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e028",
+   "kind": "emergency",
+   "language": "en",
+   "text": "kitchen fire at my apartment, I keep coughing up black stuff, my voice is getting raspy and its getting harder to breathe",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "smoke",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e029",
+   "kind": "emergency",
+   "language": "en",
+   "text": "ate shrimp pasta and now my tongue feels huge and my throat is closing up",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "anaphylaxis",
+   "max_esi": 1
+  },
+  {
+   "id": "en_e030",
+   "kind": "emergency",
+   "language": "en",
+   "text": "stung by a bee, hives everywhere, I feel dizzy and lightheaded, I already used my epipen in the car",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "anaphylaxis-post-epi",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e031",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my daughter is allergic to peanuts and someone at the party gave her a cookie, now she's coughing, scratching at her neck and her lips are swelling",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "peds-allergy",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e032",
+   "kind": "emergency",
+   "language": "en",
+   "text": "started a new blood pressure med this week and now my face is puffing up, my voice sounds weird and its hard to swallow",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "angioedema",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e033",
+   "kind": "emergency",
+   "language": "en",
+   "text": "allergic to cashews and I think there were some in my thai food, now I'm wheezing and throwing up",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "allergy-wheeze",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e034",
+   "kind": "emergency",
+   "language": "en",
+   "text": "sliced my hand open with a box cutter at work, blood is soaking through the third towel",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "laceration",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e035",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my nose has been gushing blood for over an hour, pinching doesnt help, I'm on blood thinners",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "epistaxis-anticoag",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e036",
+   "kind": "emergency",
+   "language": "en",
+   "text": "We were riding home from the lake and my buddy laid his bike down on the highway, maybe 50 mph, and slid into the guardrail. He got up and said he was fine so we drove him here ourselves, but in the car his belly started getting hard and swollen and now he's really pale and keeps saying he's cold.",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "blunt-trauma-long",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e037",
+   "kind": "emergency",
+   "language": "en",
+   "text": "fell off a ladder about 12 feet and landed flat on my back, I cant feel my legs",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "spinal",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e038",
+   "kind": "emergency",
+   "language": "en",
+   "text": "got stabbed in my side outside a bar, theres a lot of blood",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "stab",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e039",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my son got bumped by a car in the parking lot, it was going slow but he hit his head on the pavement, he threw up twice and he's super sleepy",
+   "medical_info": {
+    "age": 8,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "peds-head",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e040",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I think my leg is broken, theres bone poking out through the skin and the pain is a 10",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "open-fracture",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e041",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Im on warfarin and I slipped and banged my head on the bathroom counter, now I have a bad headache and feel kind of foggy",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "head-anticoag",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e042",
+   "kind": "emergency",
+   "language": "en",
+   "text": "chainsaw kicked back and cut deep into my thigh, its spurting",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "arterial",
+   "max_esi": 1
+  },
+  {
+   "id": "en_e043",
+   "kind": "emergency",
+   "language": "en",
+   "text": "throwing up blood, bright red and a lot of it",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "hematemesis",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e044",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my son is having a seizure right now and its been going for like 5 minutes",
+   "medical_info": {
+    "age": 7,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "status-epilepticus",
+   "max_esi": 1
+  },
+  {
+   "id": "en_e045",
+   "kind": "emergency",
+   "language": "en",
+   "text": "had my first ever seizure an hour ago at work, coworkers said I was shaking on the floor, I bit my tongue",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "first-seizure",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e046",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my grandpa has been really confused since this morning, doesnt know what year it is and is talking to people who arent there",
+   "medical_info": {
+    "age": 82,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "delirium",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e047",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my roommate took a bunch of pills and wont wake up properly, she just mumbles",
+   "medical_info": {
+    "age": 22,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "od-bystander",
+   "max_esi": 1
+  },
+  {
+   "id": "en_e048",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I got hit in the head at football practice, blacked out for a bit, my mom says I keep asking the same questions over and over",
+   "medical_info": {
+    "age": 16,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "faint",
+    "confusion"
+   ],
+   "tag": "concussion-loc",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e049",
+   "kind": "emergency",
+   "language": "en",
+   "text": "really bad headache, stiff neck, fever, and the light hurts my eyes",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "meningitis",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e050",
+   "kind": "emergency",
+   "language": "en",
+   "text": "found my neighbor on her kitchen floor, she's breathing but I cant wake her up",
+   "medical_info": {
+    "age": 70,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "unresponsive",
+   "max_esi": 1
+  },
+  {
+   "id": "en_e051",
+   "kind": "emergency",
+   "language": "en",
+   "text": "type 1 diabetic, sugar is 41, Im shaky and sweaty and cant think straight",
+   "medical_info": {
+    "age": 30,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "hypoglycemia",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e052",
+   "kind": "emergency",
+   "language": "en",
+   "text": "i dont want to be alive anymore and my dads gun is in my car",
+   "medical_info": {
+    "age": 19,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si-gun",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e053",
+   "kind": "emergency",
+   "language": "en",
+   "text": "honestly I just want everything to stop. I wrote letters to my family last night",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si-letters",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e054",
+   "kind": "emergency",
+   "language": "en",
+   "text": "took like 30 tylenol about 2 hours ago because I wanted to die but now Im scared",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "apap-od",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e055",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I keep hearing voices telling me to hurt my baby and Im afraid Ill do it",
+   "medical_info": {
+    "age": 28,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "psychosis-infant",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e056",
+   "kind": "emergency",
+   "language": "en",
+   "text": "been cutting myself tonight and it went deeper than usual and Im thinking about doing more",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "cutting",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e057",
+   "kind": "emergency",
+   "language": "en",
+   "text": "kms fr i cant do this anymore",
+   "medical_info": {
+    "age": 17,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "slang-si",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e058",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Ive been planning to jump off the parking garage across the street, Im only here because my friend dragged me",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "jump-plan",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e059",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 15 year old daughter drank a bottle of something from under the sink after a fight with her boyfriend",
+   "medical_info": {
+    "age": 15,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "teen-ingestion",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e060",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Im 32 weeks pregnant and my water broke and theres a lot of blood",
+   "medical_info": {
+    "age": 29,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 32,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy",
+    "bleeding"
+   ],
+   "tag": "ob-bleed",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e061",
+   "kind": "emergency",
+   "language": "en",
+   "text": "positive pregnancy test last week, now sharp pain low on my right side, I feel faint, and my shoulder hurts too",
+   "medical_info": {
+    "age": 27,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 6,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy"
+   ],
+   "tag": "ectopic",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e062",
+   "kind": "emergency",
+   "language": "en",
+   "text": "36 weeks along, I have the worst headache, Im seeing spots, and my face and hands are super swollen",
+   "medical_info": {
+    "age": 31,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 36,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "preeclampsia",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e063",
+   "kind": "emergency",
+   "language": "en",
+   "text": "the baby hasnt moved since yesterday afternoon and Im 38 weeks",
+   "medical_info": {
+    "age": 30,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 38,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "decreased-fetal-movement",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e064",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Im about 10 weeks pregnant and soaking through a pad every 20 minutes with big clots",
+   "medical_info": {
+    "age": 33,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 10,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy",
+    "bleeding"
+   ],
+   "tag": "miscarriage",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e065",
+   "kind": "emergency",
+   "language": "en",
+   "text": "had my baby 5 days ago and now Im bleeding way more than before, big clots, and I feel dizzy",
+   "medical_info": {
+    "age": 30,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "pph",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e066",
+   "kind": "emergency",
+   "language": "en",
+   "text": "pregnant with twins, 30 weeks, and Im having contractions every 4 minutes",
+   "medical_info": {
+    "age": 32,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 30,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy"
+   ],
+   "tag": "preterm-labor",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e067",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 6 week old feels hot, it says 100.8 on the thermometer",
+   "medical_info": {
+    "age": 0,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e068",
+   "kind": "emergency",
+   "language": "en",
+   "text": "2 month old baby has a temp of 38.5 and isnt feeding well",
+   "medical_info": {
+    "age": 0,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever-celsius",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e069",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my newborn is 3 weeks old and really floppy and sleepy, she wont wake up for her feeds",
+   "medical_info": {
+    "age": 0,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "neonate-lethargy",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e070",
+   "kind": "emergency",
+   "language": "en",
+   "text": "baby looks kinda blue around the lips when she cries and she's breathing really fast",
+   "medical_info": {
+    "age": 0,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "infant-cyanosis",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e071",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 4 yo swallowed one of those little round batteries from the tv remote",
+   "medical_info": {
+    "age": 4,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "button-battery",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e072",
+   "kind": "emergency",
+   "language": "en",
+   "text": "toddler fell in the pool, he was under maybe a minute before we pulled him out, now hes coughing and breathing fast",
+   "medical_info": {
+    "age": 2,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "drowning",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e073",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 8 year old has type 1, hes throwing up, breathing super deep and fast, and hes really sleepy",
+   "medical_info": {
+    "age": 8,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing",
+    "confusion"
+   ],
+   "tag": "peds-dka",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e074",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my son is 11 and woke up with terrible pain in his testicle and hes throwing up",
+   "medical_info": {
+    "age": 11,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "torsion",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e075",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 3 yr old got into grandmas heart pills, maybe 4 of them",
+   "medical_info": {
+    "age": 3,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "peds-ingestion",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e076",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my baby is 10 weeks old with a fever of 101 and a rash that doesnt fade when I press a glass on it",
+   "medical_info": {
+    "age": 0,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-petechiae",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e077",
+   "kind": "emergency",
+   "language": "en",
+   "text": "Dad is 81, he fell last night and hit his head, he takes Eliquis, and today hes acting weird and super sleepy",
+   "medical_info": {
+    "age": 81,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "elder-head-anticoag",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e078",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my 90 year old grandmother has a fever and isnt making sense, she has a catheter",
+   "medical_info": {
+    "age": 90,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "urosepsis",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e079",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I'm 70. My doctor has been watching a small aneurysm in my belly for a couple of years and said to come in if anything changed. About an hour ago I got sudden terrible pain in my belly that goes straight through to my back, and I feel like I might pass out when I stand.",
+   "medical_info": {
+    "age": 70,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "aaa-long",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e080",
+   "kind": "emergency",
+   "language": "en",
+   "text": "he's 76 and he's been vomiting what looks like coffee grounds and his poop is black",
+   "medical_info": {
+    "age": 76,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ugib-elder",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e081",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my mom has dementia but today is way worse than usual, she wont eat, shes burning up and breathing fast",
+   "medical_info": {
+    "age": 80,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion",
+    "breathing"
+   ],
+   "tag": "dementia-sepsis",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e082",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I passed out in the shower this morning, I'm 72 and on heart medicine",
+   "medical_info": {
+    "age": 72,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "syncope-elder",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e083",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I had chemo 8 days ago and now I have a fever of 101.5 and chills",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "neutropenic-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e084",
+   "kind": "emergency",
+   "language": "en",
+   "text": "the cut on my leg got red and now the red is spreading really fast, my heart is racing, im shaking all over and its 103",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "cellulitis-sepsis",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e085",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my skin is getting purple and blotchy, I have a fever and I feel like Im dying, it all started today",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "purpura",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e086",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I had part of my bowel taken out four days ago and they sent me home yesterday. Since this morning the belly pain has been getting a lot worse instead of better, I have a fever of 102, and my heart feels like it's racing even lying down.",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "postop-long",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e087",
+   "kind": "emergency",
+   "language": "en",
+   "text": "pooping straight blood, the toilet bowl is full of it, and I feel like Im going to faint",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "lgib",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e088",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my belly is rock hard and swollen, I havent pooped or passed gas in 3 days, Im puking green and the pain is a 9",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "sbo",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e089",
+   "kind": "emergency",
+   "language": "en",
+   "text": "swallowed a fish bone and now I cant swallow my own spit, Im drooling",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "esophageal-fb",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e090",
+   "kind": "emergency",
+   "language": "en",
+   "text": "the pain in my lower right belly got really bad, then suddenly eased up, and now my whole belly hurts and I have a fever",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "perforated-appendix",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e091",
+   "kind": "emergency",
+   "language": "en",
+   "text": "got splashed in both eyes with drain cleaner at work",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "chemical-eye",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e092",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I suddenly cant see anything out of my right eye, it doesnt hurt",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "crao",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e093",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my friend collapsed near the end of his half marathon, hes hot as hell, confused, and not sweating anymore",
+   "medical_info": {
+    "age": 35,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "faint",
+    "confusion"
+   ],
+   "tag": "heat-stroke",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e094",
+   "kind": "emergency",
+   "language": "en",
+   "text": "the whole family has headaches and feels sick to our stomachs, the dog is acting weird too, we have an old gas heater",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "carbon-monoxide",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e095",
+   "kind": "emergency",
+   "language": "en",
+   "text": "electrician, got zapped by 480 volts, theres a burn on my hand and my heart keeps fluttering",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "electrical",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e096",
+   "kind": "emergency",
+   "language": "en",
+   "text": "my sugar meter just says HI, I'm peeing nonstop, throwing up, and my breath smells fruity",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "dka",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e097",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I took way too much of my oxy by accident, Im really drowsy and my breathing feels slow",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "opioid",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e098",
+   "kind": "emergency",
+   "language": "en",
+   "text": "spilled a pot of boiling oil on my arm and part of my chest, the skin is peeling off",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "burn",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e099",
+   "kind": "emergency",
+   "language": "en",
+   "text": "I get panic attacks but this one is different, my chest is hurting and my left arm is tingling and im 52",
+   "medical_info": {
+    "age": 52,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "panic-vs-mi",
+   "max_esi": 2
+  },
+  {
+   "id": "en_e100",
+   "kind": "emergency",
+   "language": "en",
+   "text": "blood pressure was 220/130 on the pharmacy machine and I have a pounding headache and blurry vision",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "htn-emergency",
+   "max_esi": 2
+  },
+  {
+   "id": "en_d001",
+   "kind": "everyday",
+   "language": "en",
+   "text": "sore throat for 3 days, no fever, it just hurts a little to swallow",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "pharyngitis",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d002",
+   "kind": "everyday",
+   "language": "en",
+   "text": "I twisted my ankle playing basketball yesterday, it's swollen but I can walk on it",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ankle-sprain",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d003",
+   "kind": "everyday",
+   "language": "en",
+   "text": "this sore throat is killing me lol, I just need a note for work",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-killing-me",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d004",
+   "kind": "everyday",
+   "language": "en",
+   "text": "chest cold for about a week, coughing up some yellow stuff, breathing is fine",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-chest-cold",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d005",
+   "kind": "everyday",
+   "language": "en",
+   "text": "pink eye, my left eye is crusty and red since this morning",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "conjunctivitis",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d006",
+   "kind": "everyday",
+   "language": "en",
+   "text": "need a refill on my blood pressure pills, ran out yesterday, I feel fine",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bp-refill",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d007",
+   "kind": "everyday",
+   "language": "en",
+   "text": "Im dying to get this splinter out, its been in my finger two days and its a little red",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-dying-to",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d008",
+   "kind": "everyday",
+   "language": "en",
+   "text": "paper cut on my thumb bled for a minute but its stopped now, just want it cleaned",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bled-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d009",
+   "kind": "everyday",
+   "language": "en",
+   "text": "itchy rash on both arms after hiking, pretty sure its poison ivy",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "poison-ivy",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d010",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my heart is broken after my breakup lol but Im actually here for this ear pain",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-heart-broken",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d011",
+   "kind": "everyday",
+   "language": "en",
+   "text": "stubbed my toe on the chest of drawers, its purple and might be broken",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-chest-of-drawers",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d012",
+   "kind": "everyday",
+   "language": "en",
+   "text": "we watched a stroke video in health class and now Im paranoid, but I feel totally normal, I just have a cold",
+   "medical_info": {
+    "age": 15,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-stroke-video",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d013",
+   "kind": "everyday",
+   "language": "en",
+   "text": "cut my finger slicing onions, maybe half an inch, the bleeding stopped with a bandaid but it might need a stitch or two",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-small-lac",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d014",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my kid is 7, runny nose and a cough, no fever, eating and playing fine",
+   "medical_info": {
+    "age": 7,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "peds-uri",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d015",
+   "kind": "everyday",
+   "language": "en",
+   "text": "burning when I pee since yesterday, no fever, no back pain",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "uti",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d016",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my back is sore from moving furniture all weekend, no numbness or weakness or anything",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-no-numbness",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d017",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my knee has been achy for a couple weeks when I run",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "knee-ache",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d018",
+   "kind": "everyday",
+   "language": "en",
+   "text": "I fainted once two years ago but thats not why Im here, I sprained my wrist skateboarding",
+   "medical_info": {
+    "age": 16,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-fainted-history",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d019",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my blood test came back with slightly high cholesterol and my doctors office is closed, can someone explain it",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-blood-test",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d020",
+   "kind": "everyday",
+   "language": "en",
+   "text": "earache in my right ear since yesterday, Ive been swimming a lot",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "otitis-externa",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d021",
+   "kind": "everyday",
+   "language": "en",
+   "text": "got a tattoo three days ago and its a little red and itchy around the edges",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tattoo",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d022",
+   "kind": "everyday",
+   "language": "en",
+   "text": "body aches, cough, low fever of 100.2, I think its the flu, Im 25 and healthy",
+   "medical_info": {
+    "age": 25,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "flu",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d023",
+   "kind": "everyday",
+   "language": "en",
+   "text": "lost a filling and my tooth is sensitive to cold drinks",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "dental",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d024",
+   "kind": "everyday",
+   "language": "en",
+   "text": "not pregnant, I checked, but my period cramps are bad this month, ibuprofen helps",
+   "medical_info": {
+    "age": 24,
+    "sex": "female",
+    "pregnant": false,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-not-pregnant",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d025",
+   "kind": "everyday",
+   "language": "en",
+   "text": "bug bite on my leg is swollen and itchy, about the size of a quarter",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "bug-bite",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d026",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my baby is 8 months old and has a little diaper rash, otherwise shes totally happy",
+   "medical_info": {
+    "age": 0,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-baby-diaper-rash",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d027",
+   "kind": "everyday",
+   "language": "en",
+   "text": "sunburn from the beach yesterday, red and sore, no blisters",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "sunburn",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d028",
+   "kind": "everyday",
+   "language": "en",
+   "text": "think I need a tetanus shot, stepped on a nail last week, it healed fine",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tetanus",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d029",
+   "kind": "everyday",
+   "language": "en",
+   "text": "im short on patience not breath lol, my sinuses have been stuffed up for a week",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-short-of-patience",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d030",
+   "kind": "everyday",
+   "language": "en",
+   "text": "bumped my head on a cabinet door, small bump, never blacked out and I feel totally fine",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-minor-head-bump",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d031",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my chest is fine and my heart is fine, I just have a stuffy nose and need a work note",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-negated-chest",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d032",
+   "kind": "everyday",
+   "language": "en",
+   "text": "had a nosebleed this morning from the dry air, it stopped after 5 minutes",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-nosebleed-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d033",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my toddler rolled off the couch onto the carpet, cried right away, and now hes running around laughing like normal",
+   "medical_info": {
+    "age": 2,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-toddler-fall",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d034",
+   "kind": "everyday",
+   "language": "en",
+   "text": "pulled a muscle in my neck sleeping wrong",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "neck-strain",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d035",
+   "kind": "everyday",
+   "language": "en",
+   "text": "athletes foot that wont go away no matter what cream I use",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "athletes-foot",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d036",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my wisdom tooth is coming in and the gum around it is sore",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "wisdom-tooth",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d037",
+   "kind": "everyday",
+   "language": "en",
+   "text": "Ive been kind of down since my dog died last month and sleeping a lot. No thoughts of hurting myself, I just want to talk to someone",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-low-mood-no-si",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d038",
+   "kind": "everyday",
+   "language": "en",
+   "text": "shaved my legs and got razor bumps that look a little infected",
+   "medical_info": {
+    "age": 30,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "razor-bumps",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d039",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my 12 year old jammed her finger at volleyball and its swollen",
+   "medical_info": {
+    "age": 12,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "jammed-finger",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d040",
+   "kind": "everyday",
+   "language": "en",
+   "text": "heartburn after spicy food, same as always, tums help but I ran out",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-heartburn-usual",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d041",
+   "kind": "everyday",
+   "language": "en",
+   "text": "Im diabetic but my sugar is fine, I just need my foot looked at, I got a blister from new shoes",
+   "medical_info": {
+    "age": 55,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-diabetic-blister",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d042",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my contact lens feels stuck in my eye and its a little irritated",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "contact-lens",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d043",
+   "kind": "everyday",
+   "language": "en",
+   "text": "constipated for 3 days, my belly is a little crampy but Im still passing gas",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "constipation",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d044",
+   "kind": "everyday",
+   "language": "en",
+   "text": "theres a bright red patch of blood on the white part of my eye, doesnt hurt and my vision is fine",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-blood-in-eye",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d045",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my son has lice and the school sent him home",
+   "medical_info": {
+    "age": 9,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "lice",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d046",
+   "kind": "everyday",
+   "language": "en",
+   "text": "hit my thumb with a hammer, its throbbing and the nail is turning black",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "subungual-hematoma",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d047",
+   "kind": "everyday",
+   "language": "en",
+   "text": "small burn on my hand from the oven rack, red with one little blister",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "minor-burn",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d048",
+   "kind": "everyday",
+   "language": "en",
+   "text": "here with my grandma, shes 84 and has had a mild cough for a few days, otherwise shes herself, eating and chatting like normal",
+   "medical_info": {
+    "age": 84,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-elder-mild-cough",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d049",
+   "kind": "everyday",
+   "language": "en",
+   "text": "nervous about a job interview, my stomach has butterflies, could it be an ulcer",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-butterflies",
+   "min_esi": 3
+  },
+  {
+   "id": "en_d050",
+   "kind": "everyday",
+   "language": "en",
+   "text": "my throte is sore n scratchy and my nose is runnin, been 2 days",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "typos-uri",
+   "min_esi": 3
+  },
+  {
+   "id": "es_e01",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Desde hace una hora siento una presión fuerte en el pecho y me falta el aire, estoy sudando frío",
+   "medical_info": {
+    "age": 50,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest",
+    "breathing"
+   ],
+   "tag": "cardiac",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e02",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Mi hijo de 4 años respira muy rápido y se le hunden las costillas, tiene los labios moraditos",
+   "medical_info": {
+    "age": 4,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "peds-resp",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e03",
+   "kind": "emergency",
+   "language": "es",
+   "text": "A mi papá se le durmió la mitad de la cara y no puede hablar bien, empezó de repente",
+   "medical_info": {
+    "age": 70,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e04",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Mi bebé tiene 6 semanas y está calientito, el termómetro marca 38.2, no quiere comer",
+   "medical_info": {
+    "age": 0,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e05",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Tengo 8 semanas de embarazo, me duele muchísimo el lado derecho de la panza y estoy mareada",
+   "medical_info": {
+    "age": 28,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 8,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy"
+   ],
+   "tag": "ectopic",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e06",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Ya me quiero morir, tengo las pastillas guardadas para hacerlo esta noche",
+   "medical_info": {
+    "age": 30,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si-plan",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e07",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Soy diabético, tengo el azúcar en 450, vomito mucho y respiro raro, me siento muy débil",
+   "medical_info": {
+    "age": 45,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "dka",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e08",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Me caí de la moto y me pegué en la cabeza, vomité dos veces y no me acuerdo de lo que pasó",
+   "medical_info": {
+    "age": 25,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "head-injury",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e09",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Me picó una abeja y se me hinchó toda la cara, siento la garganta apretada",
+   "medical_info": {
+    "age": 35,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "anaphylaxis",
+   "max_esi": 1
+  },
+  {
+   "id": "es_e10",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Mi abuelo de 80 años tiene fiebre, está muy dormido y no nos reconoce",
+   "medical_info": {
+    "age": 80,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "elder-sepsis",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e11",
+   "kind": "emergency",
+   "language": "es",
+   "text": "Estoy vomitando sangre, mucha, roja",
+   "medical_info": {
+    "age": 50,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "hematemesis",
+   "max_esi": 2
+  },
+  {
+   "id": "es_e12",
+   "kind": "emergency",
+   "language": "es",
+   "text": "mi hijo de 12 años tiene un dolor horrible en un testículo desde hace dos horas y está vomitando",
+   "medical_info": {
+    "age": 12,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "torsion",
+   "max_esi": 2
+  },
+  {
+   "id": "es_d01",
+   "kind": "everyday",
+   "language": "es",
+   "text": "Tengo tos y mocos desde hace 4 días, sin fiebre, respiro bien",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-uri-negated",
+   "min_esi": 3
+  },
+  {
+   "id": "es_d02",
+   "kind": "everyday",
+   "language": "es",
+   "text": "Me torcí el tobillo bajando la escalera, está un poco hinchado pero camino",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ankle-sprain",
+   "min_esi": 3
+  },
+  {
+   "id": "es_d03",
+   "kind": "everyday",
+   "language": "es",
+   "text": "Se me acabaron las pastillas de la presión y necesito una receta, me siento bien",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bp-refill",
+   "min_esi": 3
+  },
+  {
+   "id": "es_d04",
+   "kind": "everyday",
+   "language": "es",
+   "text": "Me salió un sarpullido que pica en los brazos después de ir al campo",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "rash",
+   "min_esi": 3
+  },
+  {
+   "id": "es_d05",
+   "kind": "everyday",
+   "language": "es",
+   "text": "Me corté con una hoja de papel, sangró un poquito pero ya paró",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bled-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "es_d06",
+   "kind": "everyday",
+   "language": "es",
+   "text": "Me muero de ganas de que alguien me revise este oído que me duele desde ayer",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-me-muero-de-ganas",
+   "min_esi": 3
+  },
+  {
+   "id": "zh_e01",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "我老公说胸口闷得厉害，像被石头压住，一直出冷汗，脸色很差",
+   "medical_info": {
+    "age": 55,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e02",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "哮喘发作了，喷了好几次药都没用，现在一句话都说不完整",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "asthma",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e03",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "我奶奶刚才吃饭的时候突然筷子拿不住了，嘴角歪了，说话含糊",
+   "medical_info": {
+    "age": 85,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-elderly",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e04",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "宝宝出生才五十天，摸着很烫，量了38.6度，一直哭",
+   "medical_info": {
+    "age": 0,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e05",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "怀孕六个月，突然流了很多水，还有点出血，肚子很痛",
+   "medical_info": {
+    "age": 30,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 24,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy",
+    "bleeding"
+   ],
+   "tag": "ob-rom-bleed",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e06",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "活着太累了，我已经写好遗书了",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si-note",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e07",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "撕裂一样的疼，从胸口一直穿到后背，我有高血压",
+   "medical_info": {
+    "age": 60,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "dissection",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e08",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "我爸八十多了，摔了一跤磕到头，他在吃抗凝药，现在一直想睡觉，叫他也反应慢",
+   "medical_info": {
+    "age": 83,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "elder-head-anticoag",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e09",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "被蜜蜂蜇了以后全身起疹子，嘴唇肿了，喉咙发紧，喘不过气",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "anaphylaxis",
+   "max_esi": 1
+  },
+  {
+   "id": "zh_e10",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "孩子三岁，误吞了一颗纽扣电池",
+   "medical_info": {
+    "age": 3,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "button-battery",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e11",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "心跳特别快，快两百了，头晕得站不住，感觉要晕过去了",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "svt-presyncope",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_e12",
+   "kind": "emergency",
+   "language": "zh",
+   "text": "我做完化疗一个星期，现在发烧39度，一直发抖",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "neutropenic-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "zh_d01",
+   "kind": "everyday",
+   "language": "zh",
+   "text": "喉咙痛了三天，不发烧，吃饭有点疼",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "pharyngitis",
+   "min_esi": 3
+  },
+  {
+   "id": "zh_d02",
+   "kind": "everyday",
+   "language": "zh",
+   "text": "打篮球扭到脚了，有点肿，能走路",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ankle-sprain",
+   "min_esi": 3
+  },
+  {
+   "id": "zh_d03",
+   "kind": "everyday",
+   "language": "zh",
+   "text": "降压药吃完了，想开点药，身体没什么不舒服",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bp-refill",
+   "min_esi": 3
+  },
+  {
+   "id": "zh_d04",
+   "kind": "everyday",
+   "language": "zh",
+   "text": "胳膊上起了一片红疹子，很痒，可能是过敏",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "rash",
+   "min_esi": 3
+  },
+  {
+   "id": "zh_d05",
+   "kind": "everyday",
+   "language": "zh",
+   "text": "流鼻涕咳嗽，没有发烧，呼吸正常，胸口也不痛",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-uri-negated",
+   "min_esi": 3
+  },
+  {
+   "id": "zh_d06",
+   "kind": "everyday",
+   "language": "zh",
+   "text": "切菜不小心割到手指，流了一点血，已经止住了",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bled-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "hi_e01",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "मेरे पति के सीने में भारीपन है, पसीना आ रहा है और बाएँ हाथ में दर्द जा रहा है",
+   "medical_info": {
+    "age": 55,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e02",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "सांस फूल रही है, दो कदम भी नहीं चल पा रहा, होंठ नीले लग रहे हैं",
+   "medical_info": {
+    "age": 60,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "resp-cyanosis",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e03",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "दादी का एक तरफ का हाथ-पैर अचानक काम नहीं कर रहा और ज़ुबान लड़खड़ा रही है",
+   "medical_info": {
+    "age": 78,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-elderly",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e04",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "मेरी बेटी सिर्फ 7 हफ्ते की है, उसे तेज़ बुखार है, दूध भी नहीं पी रही",
+   "medical_info": {
+    "age": 0,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e05",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "मैं 7 महीने की प्रेग्नेंट हूँ, पानी की थैली फट गई और खून भी आ रहा है",
+   "medical_info": {
+    "age": 27,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 28,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy",
+    "bleeding"
+   ],
+   "tag": "ob-rom-bleed",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e06",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "मन करता है खुद को खत्म कर लूँ, अब और नहीं सहा जाता",
+   "medical_info": {
+    "age": 22,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e07",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "खेत में सांप ने काट लिया, पैर सूज रहा है और चक्कर आ रहे हैं",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "snakebite",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e08",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "बहुत गर्मी में काम कर रहा था, अचानक गिर पड़ा, अब बहकी-बहकी बातें कर रहा है, बदन आग जैसा गर्म है",
+   "medical_info": {
+    "age": 45,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "faint",
+    "confusion"
+   ],
+   "tag": "heat-stroke-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e09",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "seene me bahut tez dard ho raha hai aur saans lene me dikkat hai",
+   "medical_info": {
+    "age": 50,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest",
+    "breathing"
+   ],
+   "tag": "romanized-cardiac",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e10",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "bachche ne chhoti gol battery nigal li hai",
+   "medical_info": {
+    "age": 3,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "romanized-button-battery",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_e11",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "मेरे बेटे को दौरा पड़ रहा है, पांच मिनट से हाथ-पैर झटक रहा है, होश नहीं है",
+   "medical_info": {
+    "age": 6,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "status-epilepticus",
+   "max_esi": 1
+  },
+  {
+   "id": "hi_e12",
+   "kind": "emergency",
+   "language": "hi",
+   "text": "मैंने गलती से नहीं, जानबूझकर चूहे मारने की दवा खा ली है",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "intentional-poison",
+   "max_esi": 2
+  },
+  {
+   "id": "hi_d01",
+   "kind": "everyday",
+   "language": "hi",
+   "text": "तीन दिन से गले में खराश है, बुखार नहीं है",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "pharyngitis",
+   "min_esi": 3
+  },
+  {
+   "id": "hi_d02",
+   "kind": "everyday",
+   "language": "hi",
+   "text": "सीढ़ी से उतरते हुए टखना मुड़ गया, थोड़ी सूजन है, चल पा रहा हूँ",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ankle-sprain",
+   "min_esi": 3
+  },
+  {
+   "id": "hi_d03",
+   "kind": "everyday",
+   "language": "hi",
+   "text": "बीपी की दवाई खत्म हो गई है, पर्ची चाहिए, बाकी सब ठीक है",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bp-refill",
+   "min_esi": 3
+  },
+  {
+   "id": "hi_d04",
+   "kind": "everyday",
+   "language": "hi",
+   "text": "हाथों पर खुजली वाले लाल दाने हो गए हैं",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "rash",
+   "min_esi": 3
+  },
+  {
+   "id": "hi_d05",
+   "kind": "everyday",
+   "language": "hi",
+   "text": "kaagaz se ungli kat gayi, thoda khoon aaya tha, ab ruk gaya",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "romanized-tricky-bled-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "hi_d06",
+   "kind": "everyday",
+   "language": "hi",
+   "text": "जुकाम और खांसी है, सांस लेने में कोई दिक्कत नहीं, सीने में दर्द नहीं",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-uri-negated",
+   "min_esi": 3
+  },
+  {
+   "id": "ar_e01",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "أحس بضغط قوي على صدري من نص ساعة، وعرقان، والألم رايح لفكي",
+   "medical_info": {
+    "age": 55,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e02",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "ابني عنده ربو وما يقدر يتكلم من ضيق النفس، والبخاخ ما نفع",
+   "medical_info": {
+    "age": 9,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "peds-asthma",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e03",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "أمي فجأة وجهها مال على جهة وما تقدر ترفع يدها اليسار",
+   "medical_info": {
+    "age": 70,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e04",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "بنتي عمرها ٦ أسابيع وحرارتها ٣٨٫٤ وما ترضع",
+   "medical_info": {
+    "age": 0,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever-arabic-digits",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e05",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "أنا حامل بالشهر الثالث وعندي نزيف قوي مع ألم شديد في بطني",
+   "medical_info": {
+    "age": 30,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 12,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy",
+    "bleeding"
+   ],
+   "tag": "ob-bleed",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e06",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "تعبت من الحياة وأفكر أنهي حياتي الليلة",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e07",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "ريحة غاز في البيت وكلنا عندنا صداع ودوخة، وأخوي الصغير نايم وما يصحى زين",
+   "medical_info": {
+    "age": 10,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "carbon-monoxide",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e08",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "صار لي حادث سيارة قوي، بطني يوجعني مرة وأحس بدوخة",
+   "medical_info": {
+    "age": 35,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "mvc-abdominal",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e09",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "أكلت فول سوداني وحلقي يتسكر وصعب أتنفس",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "anaphylaxis",
+   "max_esi": 1
+  },
+  {
+   "id": "ar_e10",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "طفلي يتشنج من خمس دقائق وما يرد علي",
+   "medical_info": {
+    "age": 3,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "status-epilepticus",
+   "max_esi": 1
+  },
+  {
+   "id": "ar_e11",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "صداع مفاجئ قوي جداً، أسوأ صداع في حياتي، وتقيأت",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "sah",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_e12",
+   "kind": "emergency",
+   "language": "ar",
+   "text": "بنتي عمرها سنتين شربت كلوركس بالغلط وتكح وتستفرغ",
+   "medical_info": {
+    "age": 2,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "peds-caustic",
+   "max_esi": 2
+  },
+  {
+   "id": "ar_d01",
+   "kind": "everyday",
+   "language": "ar",
+   "text": "عندي التهاب في الحلق من ثلاثة أيام بدون حرارة",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "pharyngitis",
+   "min_esi": 3
+  },
+  {
+   "id": "ar_d02",
+   "kind": "everyday",
+   "language": "ar",
+   "text": "التوى كاحلي وأنا ألعب كورة، منتفخ شوي بس أقدر أمشي",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ankle-sprain",
+   "min_esi": 3
+  },
+  {
+   "id": "ar_d03",
+   "kind": "everyday",
+   "language": "ar",
+   "text": "أحتاج وصفة لدواء الضغط، خلص عندي، وأنا بخير",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bp-refill",
+   "min_esi": 3
+  },
+  {
+   "id": "ar_d04",
+   "kind": "everyday",
+   "language": "ar",
+   "text": "طلعت عندي حبوب حمراء تحكني على يدي",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "rash",
+   "min_esi": 3
+  },
+  {
+   "id": "ar_d05",
+   "kind": "everyday",
+   "language": "ar",
+   "text": "جرحت إصبعي بورقة ونزل شوية دم ووقف",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bled-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "ar_d06",
+   "kind": "everyday",
+   "language": "ar",
+   "text": "عندي زكام وكحة، التنفس عادي وما في ألم بالصدر",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-uri-negated",
+   "min_esi": 3
+  },
+  {
+   "id": "vi_e01",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Chồng tôi kêu tức ngực, vã mồ hôi, đau lan lên hàm",
+   "medical_info": {
+    "age": 58,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "chest"
+   ],
+   "tag": "cardiac-bystander",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e02",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Tôi thở không nổi, nói vài chữ là phải dừng lại thở",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "resp",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e03",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Bà tôi tự nhiên méo miệng, nói không rõ, tay trái yếu hẳn",
+   "medical_info": {
+    "age": 80,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "stroke"
+   ],
+   "tag": "stroke-elderly",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e04",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Con tôi mới 2 tháng tuổi, sốt 38.5 độ, bú kém",
+   "medical_info": {
+    "age": 0,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "infant_fever"
+   ],
+   "tag": "infant-fever",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e05",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Tôi có thai 5 tháng, bị ra máu nhiều và đau bụng dữ dội",
+   "medical_info": {
+    "age": 28,
+    "sex": "female",
+    "pregnant": true,
+    "gestational_weeks": 20,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "pregnancy",
+    "bleeding"
+   ],
+   "tag": "ob-bleed",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e06",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Tôi không muốn sống nữa, tôi đã chuẩn bị thuốc để tự tử",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "self_harm"
+   ],
+   "tag": "si-plan",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e07",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Con tôi bị sốt xuất huyết, hôm nay chảy máu chân răng, chảy máu cam không cầm được, người lạnh",
+   "medical_info": {
+    "age": 9,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "bleeding"
+   ],
+   "tag": "dengue-shock",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e08",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Ông tôi 82 tuổi, sốt cao, lơ mơ, không nhận ra con cháu",
+   "medical_info": {
+    "age": 82,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "confusion"
+   ],
+   "tag": "elder-sepsis",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e09",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "toi bi kho tho, hong sung len sau khi an tom",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "breathing"
+   ],
+   "tag": "no-diacritics-anaphylaxis",
+   "max_esi": 1
+  },
+  {
+   "id": "vi_e10",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Con trai tôi đang co giật, đã 5 phút rồi, gọi không tỉnh",
+   "medical_info": {
+    "age": 6,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 1,
+   "truthful_flags": [
+    "faint"
+   ],
+   "tag": "status-epilepticus",
+   "max_esi": 1
+  },
+  {
+   "id": "vi_e11",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Đột nhiên đau đầu dữ dội nhất trong đời, còn bị nôn",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "sah",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_e12",
+   "kind": "emergency",
+   "language": "vi",
+   "text": "Con tôi 3 tuổi uống nhầm nước tẩy bồn cầu, đang nôn và chảy nước miếng",
+   "medical_info": {
+    "age": 3,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 2,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "peds-caustic",
+   "max_esi": 2
+  },
+  {
+   "id": "vi_d01",
+   "kind": "everyday",
+   "language": "vi",
+   "text": "Tôi bị đau họng ba ngày, không sốt",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "pharyngitis",
+   "min_esi": 3
+  },
+  {
+   "id": "vi_d02",
+   "kind": "everyday",
+   "language": "vi",
+   "text": "Tôi bị trật mắt cá chân khi chơi bóng, hơi sưng, vẫn đi được",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 4,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "ankle-sprain",
+   "min_esi": 3
+  },
+  {
+   "id": "vi_d03",
+   "kind": "everyday",
+   "language": "vi",
+   "text": "Tôi cần đơn thuốc huyết áp, hết thuốc rồi, người vẫn khỏe",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bp-refill",
+   "min_esi": 3
+  },
+  {
+   "id": "vi_d04",
+   "kind": "everyday",
+   "language": "vi",
+   "text": "Tôi bị nổi mẩn ngứa ở tay sau khi đi rừng",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "rash",
+   "min_esi": 3
+  },
+  {
+   "id": "vi_d05",
+   "kind": "everyday",
+   "language": "vi",
+   "text": "Tôi bị đứt tay do giấy, chảy chút máu nhưng đã cầm rồi",
+   "medical_info": {
+    "age": 40,
+    "sex": "male",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-bled-stopped",
+   "min_esi": 3
+  },
+  {
+   "id": "vi_d06",
+   "kind": "everyday",
+   "language": "vi",
+   "text": "Tôi bị cảm, ho, sổ mũi, thở bình thường, không đau ngực",
+   "medical_info": {
+    "age": 40,
+    "sex": "female",
+    "pregnant": null,
+    "gestational_weeks": null,
+    "allergies": [],
+    "allergy_severity": {},
+    "medications": [],
+    "blood_thinner_name": null,
+    "conditions": [],
+    "diabetes_type": null,
+    "heart_failure_class": null,
+    "smoker": null
+   },
+   "expected_esi": 5,
+   "truthful_flags": [
+    "none"
+   ],
+   "tag": "tricky-uri-negated",
+   "min_esi": 3
+  }
+ ]
+}

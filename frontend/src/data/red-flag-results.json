@@ -1,0 +1,1677 @@
+{
+  "generated_at": "2026-10-19",
+  "summary": {
+    "cases": 186,
+    "languages": [
+      "en",
+      "ar",
+      "bn",
+      "de",
+      "es",
+      "fa",
+      "fr",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "tl",
+      "tr",
+      "ur",
+      "vi",
+      "zh"
+    ],
+    "before_under_triaged": 155,
+    "after_under_triaged": 0
+  },
+  "cases": [
+    {
+      "text": "Crushing chest pain down my left arm and I'm sweating",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 2,
+      "after_esi": 2
+    },
+    {
+      "text": "Me duele mucho el pecho y no puedo respirar",
+      "language": "es",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "My 3 year old has a fever of 104 and is very sleepy",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I feel like I want to end my life",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I have been feeling suicidal and want to end my life",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 2,
+      "after_esi": 2
+    },
+    {
+      "text": "I took a whole bottle of tylenol",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "he fell off a ladder and hit his head and is confused",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my son is 2 and has a fever of 104 and is very sleepy",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I can't breathe",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my chest hurts a lot and I can't breathe",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "my face is drooping and my left arm is weak and my speech is slurred",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 3,
+      "after_esi": 1
+    },
+    {
+      "text": "bad headache and fever for two days with a stiff neck",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I cut my hand on glass and it won't stop bleeding.",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I am 30 weeks pregnant and bleeding",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my throat is swelling after eating peanuts",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "I fainted at work and need a work note",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "I can’t breathe and need a refill of my inhaler",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "I need a refill of my blood thinner, my gums keep bleeding and I feel dizzy and faint",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "my husband collapsed, he is not breathing",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 1,
+      "after_esi": 1
+    },
+    {
+      "text": "I can't breathe well and my lips feel tingly",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I'm bleeding a lot",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "worst headache of my life, came on suddenly an hour ago",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 2,
+      "after_esi": 2
+    },
+    {
+      "text": "Tengo un dolor fuerte en el pecho y me cuesta respirar",
+      "language": "es",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "मेरे सीने में बहुत दर्द है और सांस लेने में तकलीफ है",
+      "language": "hi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "胸口很痛，喘不过气",
+      "language": "zh",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "عندي ألم شديد في صدري ولا أستطيع التنفس",
+      "language": "ar",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I'm having a heart attack",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "there is a lot of pressure in my chest",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "It's really hard for me to breathe",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "I can barely breathe",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I'm not breathing well",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 1,
+      "after_esi": 2
+    },
+    {
+      "text": "he is gasping for air",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "my baby's lips are turning blue",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 5,
+      "after_esi": 1
+    },
+    {
+      "text": "my daughter is choking",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 1,
+      "after_esi": 1
+    },
+    {
+      "text": "my wife passed out and won't wake up",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "I think I'm having a stroke",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 1,
+      "after_esi": 1
+    },
+    {
+      "text": "sudden weakness on the left side of my body",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 1,
+      "after_esi": 1
+    },
+    {
+      "text": "my face feels numb on one side",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 1,
+      "after_esi": 1
+    },
+    {
+      "text": "my lips and tongue are swollen",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I'm having an allergic reaction and my throat feels tight",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 2,
+      "after_esi": 2
+    },
+    {
+      "text": "I'm pregnant and spotting with bad cramps",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I passed out in the shower",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I feel like I'm going to faint",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I hit my head and threw up twice",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my 4 year old has a fever and is hard to wake up",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my 6 week old baby has a fever",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I don't want to live anymore",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "I want to kill myself",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 2,
+      "after_esi": 2
+    },
+    {
+      "text": "I want to die",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "I took too many pills on purpose",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 2,
+      "after_esi": 2
+    },
+    {
+      "text": "I took 30 of my sleeping pills",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my toddler swallowed a laundry pod",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "my son is having a seizure",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 3,
+      "after_esi": 2
+    },
+    {
+      "text": "I was shot in the leg",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "my finger got cut off by a saw",
+      "language": "en",
+      "expected_max_esi": 1,
+      "before_esi": 1,
+      "after_esi": 1
+    },
+    {
+      "text": "I'm coughing up blood",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "my stiff neck and fever started this morning",
+      "language": "en",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Me corté la mano y no para de sangrar",
+      "language": "es",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Ya no quiero vivir",
+      "language": "es",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Mi papá tiene la cara caída y no puede hablar bien",
+      "language": "es",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Mi esposo está inconsciente",
+      "language": "es",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Mi hijo de 2 años tiene fiebre y está muy dormido",
+      "language": "es",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "我胸口很痛",
+      "language": "zh",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "我喘不过气",
+      "language": "zh",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "伤口一直流血，流血不止",
+      "language": "zh",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "我想自杀",
+      "language": "zh",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "我爸爸嘴歪了，说话不清",
+      "language": "zh",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "我妈妈昏迷了",
+      "language": "zh",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "لا أستطيع التنفس",
+      "language": "ar",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "عندي نزيف شديد",
+      "language": "ar",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "أريد أن أموت",
+      "language": "ar",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "أبي عنده جلطة دماغية",
+      "language": "ar",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "زوجي فاقد الوعي",
+      "language": "ar",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "मुझे साँस लेने में तकलीफ है",
+      "language": "hi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "बहुत ज्यादा खून बह रहा है",
+      "language": "hi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "मैं आत्महत्या करना चाहता हूं",
+      "language": "hi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "मेरे पिता को लकवा मार गया है",
+      "language": "hi",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "मेरी मां बेहोश हैं",
+      "language": "hi",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Tôi bị đau ngực",
+      "language": "vi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Tôi khó thở",
+      "language": "vi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Vết thương chảy máu không ngừng",
+      "language": "vi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Tôi muốn chết",
+      "language": "vi",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Bố tôi bị méo miệng và yếu nửa người",
+      "language": "vi",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Mẹ tôi bị bất tỉnh",
+      "language": "vi",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "J'ai une douleur dans la poitrine",
+      "language": "fr",
+      "expected_max_esi": 2,
+      "before_esi": 3,
+      "after_esi": 2
+    },
+    {
+      "text": "Je n’arrive pas à respirer",
+      "language": "fr",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Je saigne beaucoup et ça ne s'arrête pas",
+      "language": "fr",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Je veux mourir",
+      "language": "fr",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Mon père a le visage paralysé d'un côté",
+      "language": "fr",
+      "expected_max_esi": 1,
+      "before_esi": 3,
+      "after_esi": 1
+    },
+    {
+      "text": "Ma mère a perdu connaissance",
+      "language": "fr",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Estou com uma dor forte no peito",
+      "language": "pt",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Não consigo respirar",
+      "language": "pt",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Estou sangrando muito",
+      "language": "pt",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Eu quero morrer",
+      "language": "pt",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Meu pai está com a boca torta e a fala enrolada",
+      "language": "pt",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Minha mãe está inconsciente",
+      "language": "pt",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "У меня сильная боль в груди",
+      "language": "ru",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Я не могу дышать",
+      "language": "ru",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Кровь не останавливается",
+      "language": "ru",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Я хочу умереть",
+      "language": "ru",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "У отца перекосило лицо",
+      "language": "ru",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Муж без сознания",
+      "language": "ru",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "가슴이 너무 아파요",
+      "language": "ko",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "숨을 쉴 수 없어요",
+      "language": "ko",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "피가 멈추지 않아요",
+      "language": "ko",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "죽고 싶어요",
+      "language": "ko",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "아버지 얼굴이 한쪽으로 처졌어요",
+      "language": "ko",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "남편이 의식이 없어요",
+      "language": "ko",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Masakit ang dibdib ko",
+      "language": "tl",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Hindi ako makahinga",
+      "language": "tl",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Ayaw tumigil ang pagdurugo",
+      "language": "tl",
+      "expected_max_esi": 2,
+      "before_esi": 3,
+      "after_esi": 2
+    },
+    {
+      "text": "Gusto ko nang mamatay",
+      "language": "tl",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Tabingi ang mukha ng tatay ko",
+      "language": "tl",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Nawalan ng malay ang nanay ko",
+      "language": "tl",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "میرے سینے میں شدید درد ہے",
+      "language": "ur",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "مجھے سانس لینے میں تکلیف ہے",
+      "language": "ur",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "بہت زیادہ خون بہہ رہا ہے",
+      "language": "ur",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "میں خودکشی کرنا چاہتا ہوں",
+      "language": "ur",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "میرے والد کو فالج ہو گیا ہے",
+      "language": "ur",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "میری امی بے ہوش ہیں",
+      "language": "ur",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "درد شدید در قفسه سینه دارم",
+      "language": "fa",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "نمی‌توانم نفس بکشم",
+      "language": "fa",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "خونریزی شدید دارم",
+      "language": "fa",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "می‌خواهم خودکشی کنم",
+      "language": "fa",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "پدرم سکته مغزی کرده",
+      "language": "fa",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "مادرم بیهوش شده",
+      "language": "fa",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "আমার বুকে খুব ব্যথা",
+      "language": "bn",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "আমার শ্বাস নিতে কষ্ট হচ্ছে",
+      "language": "bn",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "রক্ত বন্ধ হচ্ছে না",
+      "language": "bn",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "আমি আত্মহত্যা করতে চাই",
+      "language": "bn",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "আমার বাবার স্ট্রোক হয়েছে",
+      "language": "bn",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "আমার মা অজ্ঞান হয়ে গেছেন",
+      "language": "bn",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "胸が痛いです",
+      "language": "ja",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "息ができない",
+      "language": "ja",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "血が止まらない",
+      "language": "ja",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "死にたい",
+      "language": "ja",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "父の顔が歪んで、ろれつが回らない",
+      "language": "ja",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "夫の意識がない",
+      "language": "ja",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Ich habe starke Brustschmerzen",
+      "language": "de",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Ich kann nicht atmen",
+      "language": "de",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Die Wunde blutet sehr stark",
+      "language": "de",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Ich will nicht mehr leben",
+      "language": "de",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Ich glaube, mein Vater hat einen Schlaganfall",
+      "language": "de",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Mein Mann ist bewusstlos",
+      "language": "de",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Ho un forte dolore al petto",
+      "language": "it",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Non riesco a respirare",
+      "language": "it",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Sanguina molto e il sangue non si ferma",
+      "language": "it",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Voglio morire",
+      "language": "it",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Mia madre ha la bocca storta e non riesce a parlare",
+      "language": "it",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Mio marito è svenuto e non risponde",
+      "language": "it",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Göğüs ağrısı var",
+      "language": "tr",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Nefes alamıyorum",
+      "language": "tr",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Kanama durmuyor",
+      "language": "tr",
+      "expected_max_esi": 2,
+      "before_esi": 3,
+      "after_esi": 2
+    },
+    {
+      "text": "Ölmek istiyorum",
+      "language": "tr",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Babanın yüzü kaydı ve konuşması bozuldu",
+      "language": "tr",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Annem bilincini kaybetti",
+      "language": "tr",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Mam silny ból w klatce piersiowej",
+      "language": "pl",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Nie mogę oddychać",
+      "language": "pl",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Bardzo mocno krwawię",
+      "language": "pl",
+      "expected_max_esi": 2,
+      "before_esi": 5,
+      "after_esi": 2
+    },
+    {
+      "text": "Chcę umrzeć",
+      "language": "pl",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Mój tata ma opadnięty kącik ust",
+      "language": "pl",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Moja mama jest nieprzytomna",
+      "language": "pl",
+      "expected_max_esi": 1,
+      "before_esi": 5,
+      "after_esi": 1
+    },
+    {
+      "text": "Dada saya sakit sekali",
+      "language": "id",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Saya sesak napas",
+      "language": "id",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Darahnya tidak mau berhenti",
+      "language": "id",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Saya ingin bunuh diri",
+      "language": "id",
+      "expected_max_esi": 2,
+      "before_esi": 4,
+      "after_esi": 2
+    },
+    {
+      "text": "Bicaranya pelo dan wajahnya mencong",
+      "language": "id",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "Suami saya tidak sadarkan diri",
+      "language": "id",
+      "expected_max_esi": 1,
+      "before_esi": 4,
+      "after_esi": 1
+    },
+    {
+      "text": "I twisted my ankle playing soccer and it's swollen",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 4
+    },
+    {
+      "text": "I need a refill of my blood pressure pills",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 5,
+      "after_esi": 5
+    },
+    {
+      "text": "I need a school note",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 5,
+      "after_esi": 5
+    },
+    {
+      "text": "I have a mild sore throat",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 5,
+      "after_esi": 5
+    },
+    {
+      "text": "I have a small cut on my finger that stopped bleeding",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 4
+    },
+    {
+      "text": "I have a faint rash on my arm",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 4
+    },
+    {
+      "text": "I stubbed my toe",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 4
+    },
+    {
+      "text": "I need a flu shot",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 4
+    },
+    {
+      "text": "I need a work note",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 5,
+      "after_esi": 5
+    },
+    {
+      "text": "I have a cough and a runny nose",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 5,
+      "after_esi": 5
+    },
+    {
+      "text": "I hurt my knee playing basketball",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 5,
+      "after_esi": 5
+    },
+    {
+      "text": "I have a toothache",
+      "language": "en",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 4
+    },
+    {
+      "text": "Me torcí el tobillo y está hinchado",
+      "language": "es",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 3
+    },
+    {
+      "text": "Necesito una receta para mis pastillas de la presión",
+      "language": "es",
+      "expected_max_esi": 5,
+      "before_esi": 3,
+      "after_esi": 3
+    },
+    {
+      "text": "我头很痛，已经三天了",
+      "language": "zh",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 3
+    },
+    {
+      "text": "J'ai mal à la gorge depuis deux jours",
+      "language": "fr",
+      "expected_max_esi": 5,
+      "before_esi": 3,
+      "after_esi": 3
+    },
+    {
+      "text": "Tenho uma tosse leve",
+      "language": "pt",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 3
+    },
+    {
+      "text": "У меня насморк",
+      "language": "ru",
+      "expected_max_esi": 5,
+      "before_esi": 4,
+      "after_esi": 3
+    }
+  ],
+  "sets": [
+    {
+      "name": "pinned",
+      "title": "Pinned phrases",
+      "about": "Our own phrases in backend/tests/test_red_flags.py. We fixed the rules until every one passed.",
+      "status": "measured",
+      "tuned": true,
+      "cases": 186,
+      "urgent": 168,
+      "everyday": 18,
+      "before_under": 155,
+      "after_under": 0,
+      "after_missed": 0,
+      "after_over": 0
+    },
+    {
+      "name": "regression",
+      "title": "Red-team regression set",
+      "about": "Written to break the rules. We fixed the rules using them.",
+      "status": "measured",
+      "tuned": true,
+      "cases": 994,
+      "urgent": 829,
+      "everyday": 165,
+      "before_under": 792,
+      "after_under": 4,
+      "after_missed": 0,
+      "after_over": 0
+    },
+    {
+      "name": "heldout",
+      "title": "Held-out set",
+      "about": "Written after the first fixes and never used to tune the rules.",
+      "status": "measured",
+      "tuned": false,
+      "cases": 287,
+      "urgent": 190,
+      "everyday": 97,
+      "before_under": 189,
+      "after_under": 49,
+      "after_missed": 48,
+      "after_over": 1
+    },
+    {
+      "name": "diagnostic_blind1",
+      "title": "Blind test 1 (now a diagnostic set)",
+      "about": "Written and run blind, then used to fix the rules by category, so it is no longer blind.",
+      "status": "measured",
+      "tuned": true,
+      "cases": 240,
+      "urgent": 160,
+      "everyday": 80,
+      "before_under": 157,
+      "after_under": 39,
+      "after_missed": 34,
+      "after_over": 0,
+      "checklist_under": 24,
+      "checklist_missed": 18
+    },
+    {
+      "name": "blind2",
+      "title": "Blind test 2",
+      "about": "Written after the fixes from blind test 1 froze, and run blind. The honest number for new wording.",
+      "status": "measured",
+      "tuned": false,
+      "before_under": null,
+      "cases": 240,
+      "urgent": 160,
+      "everyday": 80,
+      "after_under": 61,
+      "after_missed": 43,
+      "after_over": 4,
+      "checklist_under": 42,
+      "checklist_missed": 17,
+      "generated_at": "2026-10-19",
+      "note": "240 check-ins (160 emergencies, 80 everyday) in English, Spanish, Chinese, Hindi, Arabic and Vietnamese, frozen before the run (sha256 8277960b8475ed569d38b582d6ec98e67c1ad5ccc8bfd0b1e95d58a718081617). Each went through the full app (start-intake, transcribe, intake) with no AI key and the trained model on, and two runs gave identical results. \"Shown less urgent than expected\" counts an expected ESI 1 shown at ESI 2."
+    }
+  ],
+  "pending_sets": [],
+  "blind1_run": {
+    "under": 58,
+    "missed": 53,
+    "over": 8,
+    "checklist_under": 28,
+    "checklist_missed": 21,
+    "urgent": 160,
+    "everyday": 80
+  },
+  "rules": [
+    {
+      "esi": 1,
+      "name": "Not breathing, not waking up, or turning blue",
+      "examples": [
+        "My husband collapsed, he is not breathing",
+        "My baby's lips are turning blue"
+      ]
+    },
+    {
+      "esi": 1,
+      "name": "Severe injury (amputation, gunshot, blood spurting)",
+      "examples": [
+        "He was shot in the chest",
+        "My finger got cut off by a saw"
+      ]
+    },
+    {
+      "esi": 1,
+      "name": "Stroke signs (face drooping, slurred speech, one side weak)",
+      "examples": [
+        "My face is drooping and my speech is slurred",
+        "Sudden weakness on the left side of my body"
+      ]
+    },
+    {
+      "esi": 1,
+      "name": "Red-flag words in 19 more languages: not breathing, unconscious, stroke",
+      "examples": [
+        "Mi esposo no respira (es)",
+        "他昏迷了 (zh)",
+        "वह बेहोश है (hi)"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Chest pain or pressure",
+      "examples": [
+        "Crushing chest pain down my left arm",
+        "My chest hurts a lot"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Cannot breathe or very hard to breathe",
+      "examples": [
+        "I can't breathe",
+        "It's really hard to breathe",
+        "My toddler swallowed a coin and now he is drooling and cannot swallow"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Throat, lips, or tongue swelling (allergic reaction)",
+      "examples": [
+        "My throat is swelling after eating peanuts",
+        "My lips and tongue are swollen",
+        "I got stung by a bee and my throat feels tight"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Heavy bleeding or bleeding that will not stop",
+      "examples": [
+        "I cut my hand on glass and it won't stop bleeding",
+        "I'm bleeding a lot"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Pregnant with bleeding, leaking fluid, bad pain, or another warning sign",
+      "examples": [
+        "I am 30 weeks pregnant and bleeding",
+        "I'm 34 weeks and my water broke"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Fainted, passed out, or collapsed",
+      "examples": [
+        "I fainted at work",
+        "I feel dizzy and faint"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Head injury with confusion, vomiting, or passing out",
+      "examples": [
+        "He fell off a ladder and hit his head and is confused"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Stiff neck with fever or headache",
+      "examples": [
+        "Bad headache and fever for two days with a stiff neck"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Child under 5 with fever who is very sleepy or hard to wake",
+      "examples": [
+        "My 3 year old has a fever of 104 and is very sleepy"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Baby under 3 months with a fever",
+      "examples": [
+        "My 6 week old baby has a fever"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Suicidal thoughts or self-harm",
+      "examples": [
+        "I feel like I want to end my life",
+        "I don't want to live anymore",
+        "I wrote letters to my family last night and I just want everything to stop"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Overdose or poisoning",
+      "examples": [
+        "I took a whole bottle of tylenol",
+        "My toddler swallowed a laundry pod"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Seizure",
+      "examples": [
+        "My son had a seizure"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "One arm or one side weak or numb",
+      "examples": [
+        "My left arm is numb"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Other high-risk signs (worst headache, vision loss, serious injury, dangerous readings)",
+      "examples": [
+        "Worst headache of my life, it came on suddenly"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "New confusion or not acting like themselves",
+      "examples": [
+        "My grandma is suddenly confused and does not know where she is"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Thoughts of hurting someone else",
+      "examples": [
+        "I keep having thoughts about hurting someone"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Sexual assault or strangulation",
+      "examples": [
+        "I was sexually assaulted last night",
+        "My boyfriend choked me"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Very high blood sugar with vomiting, confusion, or fast breathing",
+      "examples": [
+        "My blood sugar is over 600 and I keep throwing up"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Baby under 3 months who will not feed, is very sleepy, or has no wet diapers",
+      "examples": [
+        "My 5 week old will not feed and is very sleepy"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Young child not peeing and very sleepy",
+      "examples": [
+        "My 18 month old has not peed all day and is really sleepy"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "Red-flag words in 19 more languages: chest pain, cannot breathe, heavy bleeding, suicidal thoughts",
+      "examples": [
+        "Me duele mucho el pecho y no puedo respirar (es)",
+        "胸口很痛，喘不过气 (zh)",
+        "عندي ألم شديد في صدري ولا أستطيع التنفس (ar)"
+      ]
+    },
+    {
+      "esi": 2,
+      "name": "The same red flags typed in Latin letters (Hindi, Arabic, Chinese, Russian, Japanese, Korean, Persian, Bengali)",
+      "examples": [
+        "seene mein dard ho raha hai (Hindi in Latin letters)"
+      ]
+    },
+    {
+      "esi": 3,
+      "name": "Written in another language and no AI translation is available: a nurse reads it",
+      "examples": [
+        "Me torcí el tobillo y está hinchado (es)"
+      ]
+    },
+    {
+      "esi": 5,
+      "name": "Paperwork or refill only, used only when nothing else is urgent",
+      "examples": [
+        "I need a refill of my blood pressure pills",
+        "I need a school note"
+      ]
+    }
+  ],
+  "vital_floor": [
+    {
+      "esi": 1,
+      "check": "Unresponsive, or GCS 8 or below"
+    },
+    {
+      "esi": 2,
+      "check": "New confusion, drowsiness, or agitation (GCS under 15)"
+    },
+    {
+      "esi": 2,
+      "check": "Severe pain, 7 or more out of 10"
+    },
+    {
+      "esi": 2,
+      "check": "Oxygen saturation under 92%"
+    },
+    {
+      "esi": 2,
+      "check": "Systolic blood pressure under 90"
+    },
+    {
+      "esi": 2,
+      "check": "Heart rate over 100 (age 8 and up)"
+    },
+    {
+      "esi": 2,
+      "check": "Breathing rate over 20 per minute (age 8 and up)"
+    }
+  ]
+}

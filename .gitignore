@@ -1,0 +1,70 @@
+# Secrets (copy .env.example to .env; never commit the real one)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.secrets/
+
+# AI coding-assistant tooling (local settings, agent memory, absolute paths)
+.claude/
+.claude-flow/
+.swarm/
+.hive-mind/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+
+# Node and the built frontend
+node_modules/
+.pnpm-store/
+.vite/
+dist/
+*.tsbuildinfo
+frontend/vite.config.js
+.vercel
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Trained model files (about 250 MB). scripts/fetch_models.sh downloads them
+# from the GitHub release and checks every file against a pinned sha256.
+backend/models/*
+!backend/models/.gitkeep
+# The release tarball, if you rebuild it here (see "The model release" in deploy/DEPLOY.md).
+solace-models-*.tar.gz
+
+# Kaggle Triagegeist training data (competition data, not ours to redistribute).
+# scripts/train_triage_model.py reads it from data/triagegeist/.
+/data/
+
+# Runtime files: uploaded photos, generated audio, scratch space
+backend/tmp/
+tmp/
+
+# Our own submission notes (checklist, video script, written-answer drafts). They stay on
+# our computers and are never published with the code.
+docs/submission/
