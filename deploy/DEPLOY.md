@@ -6,8 +6,8 @@ does everything: it builds the frontend, downloads and checks the trained model,
 the server.
 
 **The hosted demo runs on AWS App Runner** (Option D below), at
-<https://vdb83cp227.us-east-1.awsapprunner.com>: one always-on container with a $3 daily AI
-budget. Options A to C are other ways to host the same image.
+<https://r2i8nkjrmh.us-east-1.awsapprunner.com>: one always-on container running in no-key mode
+(rules and the trained model, no AI calls). Options A to C are other ways to host the same image.
 
 Good to know before you pick a host:
 

@@ -1,14 +1,15 @@
 # Hosting Solace on AWS App Runner
 
 This is how the hosted demo runs: **one App Runner service named `solace-cac` in
-`us-east-1`**, one always-on container (1 vCPU, 2 GB), HTTPS handled by AWS, the Anthropic
-key read from AWS Secrets Manager once at startup, and a $3 daily AI budget. Every visitor
+`us-east-1`**, one always-on container (1 vCPU, 2 GB), HTTPS handled by AWS. It currently runs in no-key mode
+(rules and the trained model, no AI calls); step 6 shows how to add the Anthropic key and
+a $3 daily AI budget. Every visitor
 gets a private practice hospital (`demo-xxxxxx`).
 
 | Piece | Name |
 |---|---|
-| App Runner service | `solace-cac` (us-east-1) |
-| Service address | <https://vdb83cp227.us-east-1.awsapprunner.com> |
+| App Runner service | `solace-cac-live` (us-east-1; the name `solace-cac` failed to recreate on 2026-10-24) |
+| Service address | <https://r2i8nkjrmh.us-east-1.awsapprunner.com> |
 | ECR repository | `solace-cac` |
 | Access role (pulls the image) | `solace-cac-apprunner-ecr` |
 | Instance role (what the container may do) | `solace-cac-apprunner-instance` |
