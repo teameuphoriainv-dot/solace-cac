@@ -65,8 +65,11 @@ export default function App() {
           <Route path="/stress-test" element={<StressTestReport />} />
           {/* Split screen: patient phone on the left, live clinician queue on the right. */}
           <Route path="/showcase" element={<ShowcaseDemo />} />
-          {/* "/clinician" alone would otherwise be read as a hospital called "clinician". */}
-          <Route path="/clinician" element={<Navigate to="/" replace />} />
+          {/* The shared demo hospital with no id in the address: one side per screen. */}
+          <Route path="/patient" element={<PatientIntake />} />
+          <Route path="/patient/result/:patientId" element={<PatientResult />} />
+          <Route path="/clinician" element={<ClinicianDashboard />} />
+          <Route path="/clinician/patient/:patientId" element={<PatientDetailPage />} />
           <Route path="/:hospitalId" element={<PatientIntake />} />
           <Route path="/:hospitalId/qr" element={<QRCard />} />
           <Route path="/:hospitalId/result/:patientId" element={<PatientResult />} />
