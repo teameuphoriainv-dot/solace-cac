@@ -1,0 +1,37 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "cd frontend && npm ci --no-audit --no-fund",
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://r2i8nkjrmh.us-east-1.awsapprunner.com/api/:path*"
+    },
+    {
+      "source": "/media/:path*",
+      "destination": "https://r2i8nkjrmh.us-east-1.awsapprunner.com/media/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://r2i8nkjrmh.us-east-1.awsapprunner.com/health"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "experimentalServices": {
+    "frontend": {
+      "root": "frontend",
+      "routePrefix": "/",
+      "framework": "vite"
+    },
+    "backend": {
+      "root": "backend",
+      "entrypoint": "main:app",
+      "routePrefix": "/_/backend"
+    }
+  }
+}

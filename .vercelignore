@@ -1,0 +1,7 @@
+backend/
+scripts/
+deploy/
+Dockerfile
+.env*
+**/node_modules
+frontend/dist
