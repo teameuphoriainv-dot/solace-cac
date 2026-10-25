@@ -25,6 +25,7 @@ import { useTour } from "../hooks/useTour";
 import { apiErrorMessage, loginClinician, resetDemo } from "../lib/api";
 import { getRuntimeConfig } from "../lib/runtime-config";
 import { getSandboxId, isDemoHospital } from "../lib/sandbox";
+import { useSidePaths } from "../lib/paths";
 import { CLINICIAN_DASHBOARD_TOUR } from "../lib/tours";
 import {
   bumpActivity,
@@ -52,13 +53,14 @@ function initialsOf(name: string): string {
 
 export default function ClinicianDashboard() {
   const { hospitalId = "demo" } = useParams<{ hospitalId: string }>();
+  const sidePaths = useSidePaths();
   const navigate = useNavigate();
   const { state: locationState } = useLocation();
   const [searchParams] = useSearchParams();
   // ?embed=1 drops the sidebar for tight frames such as the /showcase pane.
   const embed = searchParams.get("embed") === "1";
   const openPatient = (id: string) =>
-    navigate(`/${hospitalId}/clinician/patient/${id}${embed ? "?embed=1" : ""}`);
+    navigate(`${sidePaths.clinician}/patient/${id}${embed ? "?embed=1" : ""}`);
   // Read synchronously so a signed-in nurse never sees the sign-in form flash.
   const [session, setSession] = useState<Session | null>(() => loadSessionFor(hospitalId));
   const [loginName, setLoginName] = useState(DEMO_CLINICIANS[0]);
@@ -325,7 +327,7 @@ export default function ClinicianDashboard() {
     );
   }
 
-  const intakeUrl = `${getRuntimeConfig().publicUrl || window.location.origin}/${hospitalId}`;
+  const intakeUrl = `${getRuntimeConfig().publicUrl || window.location.origin}${sidePaths.patient}`;
   const waitingCount = patients.filter((p) => p.status === "waiting").length;
 
   const filterToggle = (

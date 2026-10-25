@@ -21,6 +21,7 @@ import {
 import { PatientWorkspaceProvider } from "../workspace/PatientWorkspaceContext";
 import { ESIBadge } from "../patient/ESIBadge";
 import type { PatientSummary } from "../../types";
+import { useSidePaths } from "../../lib/paths";
 
 // The dashboard board: the live queue plus cards for one patient at a time.
 //
@@ -633,7 +634,7 @@ function QueueCardBody({
  */
 function QueueEmpty({ hospitalId }: { hospitalId: string }) {
   const [copied, setCopied] = useState(false);
-  const path = `/${hospitalId}`;
+  const path = useSidePaths().bare ? "/patient" : `/${hospitalId}`;
   const intakeUrl = `${window.location.origin}${path}`;
 
   const copy = async () => {

@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from "react-router-dom";
 import { ArrowLeft, ChevronDown, Info, Loader2, ShieldAlert, ShieldOff, TriangleAlert } from "lucide-react";
 import { loadSessionFor, type Session } from "../lib/session";
 import { ESI_COLORS } from "../lib/constants";
+import { useSidePaths } from "../lib/paths";
 import {
   PatientWorkspaceProvider,
   usePatientWorkspace,
@@ -62,7 +63,8 @@ function WorkspaceHeader({
   const { patient, loading, error, prefilledFromRecord } = usePatientWorkspace();
   // Inside the /showcase pane, going back keeps the compact dashboard.
   const [searchParams] = useSearchParams();
-  const queuePath = `/${hospitalId}/clinician${searchParams.get("embed") === "1" ? "?embed=1" : ""}`;
+  const sidePaths = useSidePaths();
+  const queuePath = `${sidePaths.clinician}${searchParams.get("embed") === "1" ? "?embed=1" : ""}`;
   const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   // Record details stay behind "More info" so the header reads clean.
   const [showMore, setShowMore] = useState(false);
@@ -279,6 +281,7 @@ export default function PatientDetailPage() {
     patientId?: string;
   }>();
   const [session] = useState<Session | null>(() => loadSessionFor(hospitalId));
+  const sidePaths = useSidePaths();
   const tablistId = useId();
 
   useEffect(() => {
@@ -294,7 +297,7 @@ export default function PatientDetailPage() {
             Open the nurse dashboard to sign in first.
           </p>
           <Link
-            to={`/${hospitalId}/clinician`}
+            to={sidePaths.clinician}
             className="inline-flex items-center gap-1.5 h-11 px-4 rounded-md bg-primary text-white text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2"
           >
             Go to the dashboard

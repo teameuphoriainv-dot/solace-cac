@@ -4,6 +4,7 @@ import { Loader2, ShieldOff } from "lucide-react";
 import { PatientDetailBody } from "../../clinician/PatientDetailBody";
 import { usePatientWorkspace } from "../PatientWorkspaceContext";
 import type { PatientDetail } from "../../../types";
+import { useSidePaths } from "../../../lib/paths";
 
 // Safety-rule ids (backend/services/triage_rules.py) in words a nurse reads at a glance.
 const RULE_TEXT: Record<string, string> = {
@@ -103,6 +104,7 @@ function ContentFlagBanner({ patient }: { patient: PatientDetail }) {
  */
 export default function OverviewTab() {
   const { hospitalId, patient, loading, error, reloadPatient, updatePatient } = usePatientWorkspace();
+  const sidePaths = useSidePaths();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const shown = useMemo<PatientDetail | null>(
@@ -151,7 +153,7 @@ export default function OverviewTab() {
         reloadPatient();
       }}
       onAfterMarkSeen={() => {
-        navigate(`/${hospitalId}/clinician${searchParams.get("embed") === "1" ? "?embed=1" : ""}`);
+        navigate(`${sidePaths.clinician}${searchParams.get("embed") === "1" ? "?embed=1" : ""}`);
       }}
     />
     </>
