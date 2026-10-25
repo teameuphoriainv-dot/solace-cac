@@ -16,7 +16,7 @@ recognize.
 A 2026 Congressional App Challenge entry by **Dhruv Jain** and **Sriyan Bodla**, Illinois's
 16th District.
 
-**Try it live: <https://vdb83cp227.us-east-1.awsapprunner.com>** (no sign-up; every visitor
+**Try it live: <https://r2i8nkjrmh.us-east-1.awsapprunner.com>** (no sign-up; every visitor
 gets a private practice hospital)
 
 > This is a student project with made-up patients. It is not for real medical use and has
