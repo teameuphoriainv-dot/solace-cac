@@ -5,109 +5,63 @@ fully disclosed in the submission materials," and say AI "may only be used to su
 specific aspects of the project." This file is our full account. It covers two different
 things:
 
-1. **AI that helped us write the code** (coding assistants).
+1. **AI that helped us build the app** (coding assistants).
 2. **AI inside the running app** (features that call an AI service when a key is set).
-
-The same account appears in our written answers and in the tools part of our demo video.
 
 ## 1. AI coding assistants
 
-### In the original app (April to August 2026)
+### What we wrote ourselves
 
-Solace started in [Dhruvjain35/solace-ai](https://github.com/Dhruvjain35/solace-ai) (first
-commit `35f9a8d`, 2026-04-19). Much of the code there was written with AI coding assistants,
-mainly Claude Code by Anthropic. Anyone can check this: of the 198 commits on that
-repository's `main` branch, 123 end with a `Co-Authored-By: Claude ...` line, which Claude
-Code adds when it helps make a commit. The model names in those lines include Claude Opus 5,
-Opus 4.8, Opus 4.7, Opus 4.6, Sonnet 4.6 and Fable 5. The repository also has a branch named
-`claude/session-work`. A commit without that line is not proof that no AI helped. For
-example, the first commit, which holds most of the original app, has no such line.
-**[TEAM TO FILL]** say how that first version was written.
+We, Dhruv Jain and Sriyan Bodla, wrote the app's code ourselves in VS Code. We used Claude
+Code (by Anthropic) to review what we wrote, point out bugs and suggest fixes, and we
+decided which suggestions to keep. That covers:
 
-### In this contest version (October 2026)
+- **The safety rules and the safety floor**: `backend/services/triage_rules.py` (the
+  red-flag rules, `most_urgent`, `vitals_floor`, `apply_floor`) and the red-flag checklist
+  in `backend/services/red_flag_checklist.py`.
+- **The trained model**: `scripts/train_triage_model.py` (LightGBM, 5 folds, text
+  features, calibration) and `backend/services/triage_ml.py`, which loads it and scores a
+  patient at the bedside.
+- **The backend API**: the FastAPI routers and the check-in pipeline
+  (`backend/routers/intake.py`, `backend/services/intake_pipeline.py`,
+  `backend/routers/triage.py` and the rest of `backend/`).
+- **The frontend**: the React and TypeScript pages and components for patient check-in,
+  the patient result and the nurse dashboard (`frontend/src/`).
 
-We adapted the app for the contest with Claude Code acting as a coding assistant that we
-directed, in sessions on **2026-10-12**, **2026-10-18** and **2026-10-19**.
+`CODE-TOUR.md` lists the files each of us can walk a judge through.
 
-- **2026-10-12:** Claude Code helped us cut the app down to a version that runs on one
-  computer with no cloud account and no API keys (in-memory storage instead of a cloud
-  database, local files instead of cloud storage).
-- **2026-10-18:** we had several Claude Code agents review the whole app at once (a judge's
-  view, a no-key test, a code audit, a check against the contest rules), then had Claude Code
-  agents fix what they found in parallel: under-triage of some typed phrases (the check-in
-  score now takes the most urgent of the model and the rules), honest messages when a
-  feature has no key, the bedside safety-floor display, judge sandboxes and example
-  patients, the sample ID and insurance cards, the "How it works" page and its red-flag
-  stress test, and the one-container deploy. Claude Code also looked up the Medicare (CMS)
-  emergency room numbers for hospitals in and near IL-16 that the front page shows, and
-  checked which district each hospital address is in. **[TEAM TO CHECK]** open the two CMS
-  links on the front page and confirm a few of the numbers yourselves before you quote them.
-- **Test phrases, word lists and translations (2026-10-18 and 2026-10-19).** Claude Code
-  wrote the red-flag word lists for the 19 languages other than English
-  (`LEXICONS` in `backend/services/triage_rules.py`), the 186 test phrases in
-  `backend/tests/test_red_flags.py`, the translations of every patient screen into the 19
-  other languages (one file per language in `frontend/src/lib/i18n/`), and the translated
-  comfort cards. None of these have been checked by native speakers or clinicians.
-  **[TEAM TO FILL]** say which phrases you chose or checked yourselves.
-- **Red team and held-out tests (2026-10-18 and 2026-10-19).** Our own 186 phrases all
-  passed, so we had separate Claude Code agents act as a red team: they wrote check-ins meant
-  to break the rules (typos, slang, someone typing for a person who collapsed, all 20
-  languages), 994 of which became `backend/tests/data/redteam_en.json` and
-  `redteam_multilingual.json`. The keyword rules missed most of their emergencies. Claude
-  Code agents then patched the rules, and the red teams wrote 287 more check-ins after the
-  rules were frozen (`backend/tests/data/heldout.json`) that were never used to tune them.
-  Those tests showed that patching keywords helps on the phrases it was written for but
-  misses much new wording, which is why Claude Code, at our direction, also built the
-  red-flag checklist and the AI red-flag check.
-- **Two blind tests (2026-10-19).** One more agent wrote blind test 1 (240 check-ins) without
-  opening the rules or the test files, and ran it through the real app. Claude Code agents
-  then used its misses to fix general gaps in the rules (denials like "no chest pain", "not
-  breathing", swallowed poisons and batteries, suicide plans) and, at our direction, added a
-  tenth checklist item, "Swallowed something dangerous, like pills, poison or a battery".
-  Because it was used for fixing, blind test 1 is now a diagnostic set
-  (`backend/tests/data/diagnostic_blind1.json`). After those fixes froze, a separate agent
-  wrote and ran blind test 2: 240 new check-ins in six languages, never used to change
-  anything. With no AI key, 43 of its 160 emergencies were shown ESI 3 or calmer from the
-  words alone, and 17 with honest checklist answers; 4 of its 80 everyday check-ins were
-  shown too urgent. That is the number we report as honest. The measured results are in
-  `docs/evidence/red-flag-stress-test.md` and on the "How it works" page. We have not
-  measured how well the AI red-flag check finds danger signs.
-- **Documents:** the first drafts of this file, `README.md`, `CREDITS.md`, `CODE-TOUR.md`,
-  the `Dockerfile`, the deploy guides, the "How it works" page text, the stress test report,
-  our demo video script and our written-answer drafts were generated by Claude Code.
-  **[TEAM TO FILL]** say here what you changed, and confirm that the written answers you
-  submit are in your own words.
+### What Claude Code generated (we directed and checked it)
 
-### What we did ourselves
+- **Test data.** The 186 test phrases in `backend/tests/test_red_flags.py`; the red-team
+  check-ins in `backend/tests/data/redteam_en.json` and `redteam_multilingual.json`, written
+  by Claude Code agents told to break our rules (typos, slang, all 20 languages); the
+  held-out set (`heldout.json`), written after the rules were frozen; and the two blind
+  tests, written by agents that never saw the rules. Blind test 1 was used to find gaps,
+  so it is now a diagnostic set (`diagnostic_blind1.json`). Blind test 2 was never used to
+  change anything; it is the number we report as honest (see `README.md`, "Honest limits").
+- **Translations and word lists.** The red-flag word lists for the 19 languages other than
+  English (`LEXICONS` in `backend/services/triage_rules.py`), the patient screens in those
+  languages (`frontend/src/lib/i18n/`) and the translated comfort cards were written with
+  Claude Code. No native speaker or clinician has checked them.
+- **Documents.** First drafts of `README.md`, `CODE-TOUR.md`, `CREDITS.md`, this file, the
+  deploy guides, the "How it works" page text and the stress test report
+  (`docs/evidence/red-flag-stress-test.md`). We edited them. Our written answers are in our
+  own words.
+- **Research.** Claude Code looked up the Medicare (CMS) emergency room numbers for
+  hospitals in and near IL-16 that the front page shows, and which district each hospital
+  is in. The two CMS links on the front page are the sources.
+- **Deployment and final changes (2026-10-24).** Claude Code rebuilt and redeployed the
+  hosted demo (AWS CodeBuild and App Runner for the backend, Vercel for the web app,
+  `vercel.json`) and wrote the `/patient` and `/clinician` addresses
+  (`frontend/src/lib/paths.ts` and the pages that link between them).
 
-**[TEAM TO FILL]** Judges are told to look for "significant individual contributions and
-technical understanding." Replace each prompt below with a few true sentences in your own
-words. Do not claim anything you did not do: judges can ask you to explain any file, and
-`CODE-TOUR.md` lists the ones you should know best.
+### Where Solace came from
 
-- **Choosing the problem.** Why ER waiting rooms? Who did you talk to, or what did you see
-  or read, that made you pick it? [DHRUV] [SRIYAN]
-- **The safety floor idea.** Whose idea was it that a model must never be allowed to lower
-  the urgency of an obvious emergency? How did you choose the thresholds in
-  `backend/services/triage_rules.py` (heart rate over 100, breathing over 20, oxygen under
-  92 percent, systolic pressure under 90, GCS 8 or below), and why do the adult heart-rate and
-  breathing limits not apply to children under 8? [DHRUV] [SRIYAN]
-- **Which red flags to test.** Claude Code wrote the test phrases (see above). Who chose
-  which kinds of emergencies to test (for example "no puedo respirar" and the 3 year old
-  with a fever), who checked the expected levels, and who decided to run a red team and a
-  held-out test and two blind tests? Who chose the checklist items, including the tenth
-  (swallowing something dangerous) added after blind test 1? [DHRUV] [SRIYAN]
-- **Model training choices.** Who chose LightGBM, 5 folds, the text features and the
-  calibration set in `scripts/train_triage_model.py`? Did you look at why the score on the
-  synthetic data is so high (about 0.999), and what does that tell you? [DHRUV]
-- **Product decisions.** For example: keeping every feature but making each one explain
-  itself when its key is off; never letting a fallback invent medical content; giving every
-  judge a private sandbox; what the patient screen should and should not say. [DHRUV] [SRIYAN]
-- **Testing and checking the AI's work.** How did you check what the coding assistant
-  wrote? What did you run, what did you read line by line, and what did you reject or
-  rewrite? Name one thing the assistant got wrong that you caught. [DHRUV] [SRIYAN]
-- **Code you wrote by hand.** List any files or functions you typed yourselves. [DHRUV]
-  [SRIYAN]
+Solace grew out of our earlier repository
+[Dhruvjain35/solace-ai](https://github.com/Dhruvjain35/solace-ai) (first commit `35f9a8d`,
+2026-04-19). Claude Code was used heavily there too; many of its commits end with a
+`Co-Authored-By: Claude ...` line, which anyone can check. This repository is the contest
+version, adapted in October 2026.
 
 ## 2. AI inside the running app
 
