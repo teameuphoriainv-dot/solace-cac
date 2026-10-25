@@ -10,6 +10,7 @@ import { InsuranceScanner } from "../components/patient/InsuranceScanner";
 import { LanguageGate } from "../components/patient/LanguageGate";
 import { IdScanner } from "../components/patient/IdScanner";
 import { DemoBanner } from "../components/patient/DemoBanner";
+import { useSidePaths } from "../lib/paths";
 import { PatientLogo } from "../components/patient/PatientLogo";
 import { ExampleChips } from "../components/patient/ExampleChips";
 import { RedFlagChecklist, appendChecklistFlags, type ChecklistId } from "../components/patient/RedFlagChecklist";
@@ -64,6 +65,7 @@ function sleep(ms: number) {
 
 export default function PatientIntake() {
   const { hospitalId = "demo" } = useParams<{ hospitalId: string }>();
+  const sidePaths = useSidePaths();
   const navigate = useNavigate();
   const recorder = useAudioRecorder();
   const caps = useCapabilities(hospitalId);
@@ -417,7 +419,7 @@ export default function PatientIntake() {
       } catch {
         /* private mode: the result page rebuilds from the server */
       }
-      navigate(`/${hospitalId}/result/${result.patient_id}`);
+      navigate(`${sidePaths.patient}/result/${result.patient_id}`);
     } catch (e) {
       if (isUnknownHospital(e)) {
         setInvalidLink(true);

@@ -6,6 +6,7 @@ import { AudioPlayer } from "../components/patient/AudioPlayer";
 import { CareRecommendationCard, careCopy, crisisCopy, type CareRec } from "../components/patient/CareCard";
 import { ComfortProtocol } from "../components/patient/ComfortProtocol";
 import { DemoBanner } from "../components/patient/DemoBanner";
+import { useSidePaths } from "../lib/paths";
 import { ESIBadge } from "../components/patient/ESIBadge";
 import { PainEscalateButton } from "../components/patient/PainEscalateButton";
 import { PatientLogo } from "../components/patient/PatientLogo";
@@ -127,6 +128,7 @@ function sameLive(a: LiveStatus, b: LiveStatus): boolean {
 
 export default function PatientResult() {
   const { hospitalId = "demo", patientId = "" } = useParams<{ hospitalId: string; patientId: string }>();
+  const sidePaths = useSidePaths();
   const caps = useCapabilities(hospitalId);
   const seedRef = useRef<IntakeResponse | null>(readSeed(patientId));
   const [selfHarmTapped] = useState(() => readTappedFlags(patientId).includes("self_harm"));
@@ -283,7 +285,7 @@ export default function PatientResult() {
           <h1 className="text-2xl font-bold tracking-tight rtl:tracking-normal">{t("result_not_found_title", lang)}</h1>
           <p className="text-[15px] text-text-muted leading-relaxed">{t("result_not_found_body", lang)}</p>
           <Link
-            to={`/${hospitalId}`}
+            to={sidePaths.patient}
             className="inline-flex items-center justify-center min-h-12 px-6 rounded-md bg-primary text-white font-semibold shadow-soft hover:bg-primary-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2"
           >
             {t("result_start_new", lang)}
@@ -522,8 +524,8 @@ export default function PatientResult() {
           </section>
         )}
 
-        {isDemoHospital(hospitalId) && (
-          // Only on demo hospitals: the next stop for a visitor trying both sides.
+        {isDemoHospital(hospitalId) && !sidePaths.bare && (
+          // Only on demo hospitals reached by id ("/patient" stays patient-only): the next stop for a visitor trying both sides.
           <nav className="flex flex-col gap-1 rounded-lg bg-surface-low px-4 py-3 text-[14px] leading-snug">
             <Link
               to={`/${hospitalId}/clinician`}
