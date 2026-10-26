@@ -15,11 +15,8 @@ The public repository is published from Sriyan's personal GitHub account,
 `LICENSE` names only the two of us.
 
 In the upstream repository, commits from the GitHub account `zapatoshake-eng` are Sriyan's.
-**[TEAM TO CONFIRM before publishing]** Five commits there come from the account
-`sathreya6` (authored as "Dhruv Jain"). Confirm this is Dhruv's own account and then
-replace this paragraph with one sentence saying so. If it belongs to anyone else, that
-person must be credited (or their code rewritten) before submitting, because the rules say
-all coding must be done by the student team.
+Five upstream commits (2026-05-29 and 2026-05-30) were pushed from the GitHub account
+`sathreya6` with the author name "Dhruv Jain".
 
 ## Where this code came from
 
@@ -55,9 +52,7 @@ Citation: Olaf Yunus Laitinen Imanov (2026). Triagegeist. Kaggle.
 
 **License: not fully verified.** Our earlier triagegeist README lists it as a
 "Non-Commercial Research License". The competition's rules page did not load without a
-Kaggle login, so we have not read the exact terms. **[TEAM TO CONFIRM before publishing]**
-Sign in to Kaggle, open the competition's Rules tab, and paste the "Competition Data" clause
-here.
+Kaggle login, so we have not read the exact terms.
 The data itself is not in this repository. The trained model files are published separately
 (see `scripts/fetch_models.sh`); only publish that release if the terms allow sharing a model
 trained on the data in a public, non-commercial student project.
@@ -103,9 +98,8 @@ Machine learning methods:
   Angelopoulos AN, Bates S. Conformal Prediction: A Gentle Introduction. *Foundations and
   Trends in Machine Learning.* 2023;16(4):494-591.
 
-**[TEAM TO CONFIRM]** `backend/services/drug_interactions.py` is a curated table of common
-drug pairs (about 1,000 lines) with no source cited. Add the reference you used, or say in
-the README that it is an illustration only.
+`backend/services/drug_interactions.py` is a table of common drug pairs (about 1,000 lines)
+with no source cited. It is an illustration only and must not be used for real prescribing.
 
 ## Backend libraries (Python)
 
@@ -173,7 +167,7 @@ CC-BY-4.0: data by the Can I Use project, <https://caniuse.com>.
 - **DM Sans, Fraunces and JetBrains Mono**, loaded from Google Fonts. All three are licensed
   under the SIL Open Font License 1.1.
 - **Icons** are from Lucide (ISC license), listed above.
-- **[TEAM TO CONFIRM]** The Solace logo and favicons in `frontend/public/` were made by: ____.
+- The Solace logo and favicons in `frontend/public/` were made by Dhruv Jain and Sriyan Bodla.
 
 ## Outside services (only when a key is set)
 

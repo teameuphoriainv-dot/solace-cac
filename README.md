@@ -19,6 +19,10 @@ A 2026 Congressional App Challenge entry by **Dhruv Jain** and **Sriyan Bodla**,
 **Try it live: <https://solace-cac.vercel.app>** (no sign-up; every visitor
 gets a private practice hospital)
 
+Straight to one side of the app (one shared demo hospital):
+- Patient check-in: <https://solace-cac.vercel.app/patient>
+- Clinician dashboard: <https://solace-cac.vercel.app/clinician> (sign in as Dr. Chen, PIN 224466)
+
 > This is a student project with made-up patients. It is not for real medical use and has
 > not been tested in a real hospital. The model was trained on synthetic (made-up) data.
 
