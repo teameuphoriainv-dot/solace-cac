@@ -113,8 +113,4 @@ The bedside model itself is machine learning we trained (LightGBM on the synthet
 Triagegeist data, see `CREDITS.md`), not a generative AI service. It runs locally and never
 sends data anywhere.
 
-## If a judge asks
 
-We expect questions like "Which parts did the AI write?" and "Explain this function." Our
-honest answer is in section 1. `CODE-TOUR.md` lists the files each of us can walk through,
-with likely questions and answers.
