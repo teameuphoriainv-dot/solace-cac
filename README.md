@@ -443,7 +443,7 @@ frontend/               React + TypeScript + Vite + Tailwind
                         src/lib/i18n/, loaded only when a patient picks it
 scripts/                fetch_models.sh, train_triage_model.py, calibrate_conformal.py,
                         seed_demo.py, red_flag_report.py
-deploy/                 hosting guides: AWS App Runner (the hosted demo), Hugging Face
+deploy/                 hosting guides: Vercel and AWS App Runner (the hosted demo), Hugging Face
                         Spaces, Render, any Docker host
 docs/evidence/          the red-flag stress test report
 docs/media/             the pictures in this README
