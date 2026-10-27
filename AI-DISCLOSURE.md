@@ -28,6 +28,9 @@ decided which suggestions to keep. That covers:
 - **The frontend**: the React and TypeScript pages and components for patient check-in,
   the patient result and the nurse dashboard (`frontend/src/`).
 
+Namratha Dinesh and Akshaya Konjeti worked on the clinical-side UI, the screens the nurse
+uses.
+
 `CODE-TOUR.md` lists the files each of us can walk a judge through.
 
 ### What Claude Code generated (we directed and checked it)
@@ -54,6 +57,14 @@ decided which suggestions to keep. That covers:
   hosted demo (AWS CodeBuild and App Runner for the backend, Vercel for the web app,
   `vercel.json`) and wrote the `/patient` and `/clinician` addresses
   (`frontend/src/lib/paths.ts` and the pages that link between them).
+- **The demo video (2026-10-26).** Sriyan made the video: he planned the story and its
+  parts, directed the ER scene the team acted and filmed, recorded his walkthrough, chose the
+  footage, the photos, the cut, the pacing and the mood of the music, and reviewed every
+  version. Dhruv, Akshaya and Namratha each recorded their own part. The edit is a Remotion
+  project (video made with code), and Claude Code wrote that code to Sriyan's direction: the
+  motion graphics, the code shown on screen (drawn from this repository's real lines), the
+  subtitles, the transitions, the audio cleanup and both pieces of music, which it
+  synthesized in code. Apple's Vision framework removed the photo backgrounds.
 
 ### Where Solace came from
 

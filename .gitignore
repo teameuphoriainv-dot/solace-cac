@@ -68,3 +68,15 @@ tmp/
 # Our own submission notes (checklist, video script, written-answer drafts). They stay on
 # our computers and are never published with the code.
 docs/submission/
+
+# Demo video project (Remotion): dependencies, renders and large source media stay local.
+demo/node_modules/
+demo/out/
+demo/public/captures/
+demo/public/inperson/
+demo/public/vo/
+demo/public/vo-guide/
+demo/public/music.mp3
+
+# Raw capture stills (inputs for docs/media; not needed in the repo)
+docs/media/raw/

@@ -7,16 +7,28 @@ we used AI tools is in [AI-DISCLOSURE.md](AI-DISCLOSURE.md).
 
 ## Team
 
-- Dhruv Jain
+- Namratha Dinesh
 - Sriyan Bodla
+- Dhruv Jain
+- Akshaya Konjeti
 
 The public repository is published from Sriyan's personal GitHub account,
 `teameuphoriainv-dot` (its display name "euphoria" is a personal handle, not a company). The
-`LICENSE` names only the two of us.
+`LICENSE` names Dhruv Jain and Sriyan Bodla as the copyright holders of the code.
 
-In the upstream repository, commits from the GitHub account `zapatoshake-eng` are Sriyan's.
-Five upstream commits (2026-05-29 and 2026-05-30) were pushed from the GitHub account
-`sathreya6` with the author name "Dhruv Jain".
+In the upstream repository, commits from the GitHub account `zapatoshake-eng` are Sriyan's,
+and commits from the account `sathreya6` (authored as "Dhruv Jain") are Dhruv's.
+
+## Who did what
+
+- **Sriyan Bodla:** the patient intake survey, the clinical dashboard and the triage model
+  (with Dhruv), and the demo video.
+- **Dhruv Jain:** the patient intake survey, the clinical dashboard and the triage model
+  (with Sriyan), and the code walkthrough in the video.
+- **Namratha Dinesh:** the clinical-side UI (with Akshaya).
+- **Akshaya Konjeti:** the clinical-side UI (with Namratha).
+
+How we used AI coding assistants alongside that work is in [AI-DISCLOSURE.md](AI-DISCLOSURE.md).
 
 ## Where this code came from
 
@@ -52,10 +64,9 @@ Citation: Olaf Yunus Laitinen Imanov (2026). Triagegeist. Kaggle.
 
 **License: not fully verified.** Our earlier triagegeist README lists it as a
 "Non-Commercial Research License". The competition's rules page did not load without a
-Kaggle login, so we have not read the exact terms.
-The data itself is not in this repository. The trained model files are published separately
-(see `scripts/fetch_models.sh`); only publish that release if the terms allow sharing a model
-trained on the data in a public, non-commercial student project.
+Kaggle login, so we have not read its exact data clause. The data itself is not in this
+repository. The trained model files are published separately (see
+`scripts/fetch_models.sh`) for this non-commercial student project.
 
 ## Medical scoring systems
 
@@ -168,6 +179,25 @@ CC-BY-4.0: data by the Can I Use project, <https://caniuse.com>.
   under the SIL Open Font License 1.1.
 - **Icons** are from Lucide (ISC license), listed above.
 - The Solace logo and favicons in `frontend/public/` were made by Dhruv Jain and Sriyan Bodla.
+
+## Submission video
+
+- **Photos.**
+  - Nurse at a triage desk: Providence Health Care, The Daily Scan, "Emergency room triage:
+    how does it work?" (2018),
+    <https://thedailyscan.providencehealthcare.org/2018/11/emergency-room-triage-how-does-it-work/>
+  - Hands holding a vital-signs screen: AG Urgent Care, "What are normal vital signs?",
+    <https://agurgentcare.com/what-are-normal-vital-signs/>
+  - The waiting room and the person with chest pain: free stock photos (Pixabay and similar
+    free stock sites).
+  - The chest pain and vital-signs photos had their backgrounds removed with Apple's built-in
+    Vision framework.
+- **Congressional App Challenge logo** from congressionalappchallenge.us.
+- **Map of Illinois's 16th District**: the district outline was traced from Ballotpedia's map,
+  "U.S. House Illinois District 16" (<https://ballotpedia.org>), and redrawn as a white shape.
+- **Music** is original, synthesized in code from scratch (no samples or loops), so it needs no
+  license.
+- **Everything else on screen** is our own footage or recordings of the Solace app.
 
 ## Outside services (only when a key is set)
 
